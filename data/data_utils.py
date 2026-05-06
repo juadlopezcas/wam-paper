@@ -1,10 +1,3 @@
-"""Data generators used by the WAM paper figure experiments.
-
-Phase 1 of this repository reproduces figures from saved CSV files. These
-minimal generators are included so Phase 2 can add experiment regeneration
-without pulling in unrelated data-generation utilities.
-"""
-
 import numpy as np
 from scipy.stats import expon
 from sklearn.preprocessing import scale

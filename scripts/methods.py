@@ -1,5 +1,3 @@
-"""Algorithms used to regenerate the WAM paper figure CSV files."""
-
 import time
 
 import numpy as np

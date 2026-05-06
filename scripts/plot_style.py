@@ -1,5 +1,3 @@
-"""Shared plotting style for the WAM paper figures."""
-
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
