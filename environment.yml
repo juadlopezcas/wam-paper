@@ -1,0 +1,15 @@
+name: wamfigs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4.3
+  - scipy=1.17.1
+  - matplotlib=3.10.9
+  - scikit-learn=1.8.0
+  - pandas=3.0.2
+  - autograd=1.8.0
+  - cvxpy=1.8.2
+  - pip
+  - pip:
+      - pymanopt==2.2.1
