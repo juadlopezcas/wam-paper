@@ -202,12 +202,20 @@ def run_deflation_varimax(data, dim, initialization='random'):
 
 
 def varimax_loss_factory(manifold, pca_components):
+    """Kaiser-style Varimax loss from the original comparison experiment."""
     ensure_optimization_deps()
 
     @pymanopt.function.autograd(manifold)
     def cost(Rot):
-        rotated = Rot @ pca_components
-        return -np.sum(rotated ** 4)
+        UR = pca_components @ Rot
+        _, k = UR.shape
+        varimax_sum = 0.0
+        for col in range(k):
+            column = UR[:, col]
+            fourth_moment = np.mean(column ** 4)
+            second_moment_squared = np.mean(column ** 2) ** 2
+            varimax_sum += fourth_moment - second_moment_squared
+        return varimax_sum
 
     return cost
 
