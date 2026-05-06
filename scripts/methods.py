@@ -24,7 +24,8 @@ def ensure_optimization_deps():
     except ImportError as exc:
         raise ImportError(
             'Regenerating experiment CSVs requires pymanopt and autograd. '
-            'Install dependencies with `pip install -r requirements.txt`.'
+            'Create the conda environment with `conda env create -f environment.yml` '
+            'and activate it with `conda activate wamfigs`.'
         ) from exc
     globals()['np'] = autograd_np
     pymanopt = pymanopt_module
@@ -241,7 +242,8 @@ def solver_rsc(Y, lambda_):
     except ImportError as exc:
         raise ImportError(
             'Regenerating RSC comparison CSVs requires a working cvxpy installation. '
-            'Install dependencies with `pip install -r requirements.txt`; if cvxpy is already installed, '
+            'Create the conda environment with `conda env create -f environment.yml` '
+            'and activate it with `conda activate wamfigs`; if cvxpy is already installed, '
             'check that its version is compatible with the installed NumPy version.'
         ) from exc
 
