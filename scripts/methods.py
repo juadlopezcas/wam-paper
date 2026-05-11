@@ -4,6 +4,7 @@ import numpy as np
 from scipy import linalg
 from sklearn.cluster import SpectralClustering
 from sklearn.decomposition import PCA
+from pathlib import Path
 
 from scripts.metrics import normalized_frame_error
 
@@ -11,6 +12,48 @@ pymanopt = None
 manifolds = None
 optimizers = None
 
+ro = None
+numpy2ri = None
+localconverter = None
+_r_varimax_loaded = False
+
+# Helper functions for R dependencies. 
+def ensure_r_varimax_deps():
+    global ro, numpy2ri, localconverter, _r_varimax_loaded
+
+    if _r_varimax_loaded:
+        return
+
+    try:
+        import rpy2.robjects as ro_module
+        from rpy2.robjects import numpy2ri as numpy2ri_module
+        from rpy2.robjects.conversion import localconverter as localconverter_fn
+    except ImportError as exc:
+        raise ImportError(
+            "Running pca_varimax with R requires rpy2 and a working R installation. "
+            "Install R, then run `pip install rpy2`."
+        ) from exc
+
+    ro = ro_module
+    numpy2ri = numpy2ri_module
+    localconverter = localconverter_fn
+
+    r_script = Path(__file__).resolve().parent / "r_varimax.R"
+    ro.r.source(str(r_script))
+
+    _r_varimax_loaded = True
+
+
+def np_to_r(x):
+    ensure_r_varimax_deps()
+    with localconverter(ro.default_converter + numpy2ri.converter):
+        return ro.conversion.py2rpy(np.asarray(x, dtype=float))
+
+
+def r_to_np(x):
+    ensure_r_varimax_deps()
+    with localconverter(ro.default_converter + numpy2ri.converter):
+        return np.asarray(ro.conversion.rpy2py(x), dtype=float)
 
 def ensure_optimization_deps():
     global pymanopt, manifolds, optimizers
@@ -221,28 +264,29 @@ def varimax_loss_factory(manifold, pca_components):
 
 
 def run_pca_varimax(data, dim):
-    ensure_optimization_deps()
+    ensure_r_varimax_deps()
+
     start_time = time.time()
+
     pca = PCA(n_components=dim)
     pca.fit(data)
-    components = pca.components_
-    manifold = manifolds.Stiefel(dim, dim)
-    solver = optimizers.SteepestDescent(
-        verbosity=0,
-        max_iterations=get_adaptive_iterations(dim),
-        min_gradient_norm=1e-10,
-        min_step_size=1e-12,
-    )
-    problem = pymanopt.Problem(manifold=manifold, cost=varimax_loss_factory(manifold, components))
-    result = solver.run(problem, initial_point=manifold.random_point())
-    rotated_components = result.point @ components
-    return rotated_components.T, time.time() - start_time, True, {
-        'gradient_norm': getattr(result, 'gradient_norm', None),
-        'iterations': getattr(result, 'iterations', None),
-        'step_size': getattr(result, 'step_size', None),
-        'stopping_criterion': getattr(result, 'stopping_criterion', None),
-    }
 
+    components = pca.components_  # dim x p
+
+    res = ro.globalenv["pca_varimax_from_components"](
+        np_to_r(components),
+        normalize=False,
+        eps=1e-5,
+    )
+
+    rotated_components_t = r_to_np(res.rx2("rotated"))  # p x dim
+    rotmat = r_to_np(res.rx2("rotmat"))                 # dim x dim
+
+    return rotated_components_t, time.time() - start_time, True, {
+        "stopping_criterion": "R stats::varimax",
+        "normalize": False,
+        "rotmat_shape": rotmat.shape,
+    }
 
 def solver_rsc(Y, lambda_):
     try:

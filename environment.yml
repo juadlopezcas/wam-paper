@@ -10,6 +10,11 @@ dependencies:
   - pandas=3.0.2
   - autograd=1.8.0
   - cvxpy=1.8.2
+  
+  # R bridge for pca_varimax
+  - r-base
+  - rpy2
+
   - pip
   - pip:
       - pymanopt==2.2.1
