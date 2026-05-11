@@ -26,12 +26,14 @@ python main.py --all
 Generate individual figures:
 
 ```bash
+python main.py --main-figure
 python main.py --log-iterations
 python main.py --comparison-methods
 python main.py --rates
+python main.py --nytimes  # requires data/nytimes_pca.npz
 ```
 
-Figures are saved in `figures/` as PDF and PNG files.
+Figures are saved in `figures/` as PDF and PNG files, including `fig_main.pdf` for the introductory problem figure. The NYTimes figure is optional because it requires the cached PCA factor file `data/nytimes_pca.npz`.
 
 ## Regenerate Experiment CSVs
 

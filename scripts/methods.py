@@ -89,15 +89,12 @@ def wfa1_cost_factory(manifold, data, use_mean=True):
 
     @pymanopt.function.autograd(manifold)
     def cost(basis_matrix):
-        dist = []
-        for point in data:
-            closest_axis_index = np.argmax(np.abs(np.dot(point, basis_matrix)))
-            closest_axis = basis_matrix[:, closest_axis_index]
-            projected_point = np.dot(point, closest_axis) * closest_axis
-            squared_distance = np.linalg.norm((point - projected_point) ** 2)
-            dist.append(squared_distance)
+        projections_sq = np.dot(data, basis_matrix) ** 2
+        closest_projection_sq = np.max(projections_sq, axis=1)
+        squared_norms = np.sum(data * data, axis=1)
+        dist = squared_norms - closest_projection_sq
         if use_mean:
-            return (1 / data.shape[0]) * np.sum(dist)
+            return np.mean(dist)
         return (1 / data.size) * np.trapz(dist)
 
     return cost
