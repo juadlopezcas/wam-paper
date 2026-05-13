@@ -105,7 +105,7 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
     noise_grouped, noise_levels = load_noise_robustness_results(data_dir / 'noise_robustness_results.csv')
 
     dims = [2, 5, 10, 15, 25, 50]
-    data_type = 'gaussian'
+    data_type = 'gaussian_rotated'
     sample_size = 1000
     noise_dimension = 5
 

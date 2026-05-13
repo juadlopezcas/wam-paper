@@ -1,201 +1,201 @@
 method,dimension,noise_level,trial,frame_error,runtime,success,gradient_norm,iterations,step_size,stopping_criterion
-deflation_varimax_random,5,0.01,0,0.03306208321924451,0.016781091690063477,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,1,0.13125551792256612,0.018133163452148438,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,2,0.059033840707458665,0.01601719856262207,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,3,0.4220259764826954,0.018069028854370117,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,4,0.07027345290806654,0.018157243728637695,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,5,0.17758778997758495,0.01504826545715332,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,6,0.4087510226988698,0.01905202865600586,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,7,0.017055476459614756,0.015272140502929688,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,8,0.0679313559764594,0.019052982330322266,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,9,0.0966368886183414,0.013293981552124023,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,0,0.122589433813861,0.01735210418701172,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,1,0.2316529376958901,0.019352197647094727,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,2,0.19535005948984874,0.017111778259277344,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,3,0.540464062653644,0.01715087890625,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,4,0.22741261005475236,0.015144824981689453,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,5,0.4659477206227652,0.016772031784057617,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,6,0.362044658687404,0.0201871395111084,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,7,0.062333939881651645,0.01675105094909668,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,8,0.18359290969840805,0.017857074737548828,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,9,0.21868120426073143,0.01708388328552246,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,0,0.22201386422934025,0.019205093383789062,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,1,0.271291592070398,0.01468515396118164,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,2,0.2790062301140971,0.01541590690612793,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,3,0.6245902277177864,0.015346050262451172,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,4,0.3734303731327299,0.018452882766723633,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,5,0.3776803604592782,0.01526784896850586,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,6,0.18694586343782274,0.019755125045776367,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,7,0.10421345424493836,0.0167238712310791,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,8,0.2525131856754987,0.01769089698791504,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,9,0.33421982884940404,0.014295101165771484,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,0,0.4008715581535183,0.015896081924438477,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,1,0.3963800857940538,0.01557779312133789,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,2,0.4234213531804943,0.014529943466186523,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,3,0.4753793190061047,0.017101049423217773,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,4,0.29371660730721266,0.017040014266967773,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,5,0.5223430750816568,0.018230915069580078,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,6,0.3531770879749805,0.019346237182617188,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,7,0.16911398506586192,0.01677727699279785,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,8,0.3826740405716823,0.018830299377441406,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,9,0.4056211880852365,0.01848912239074707,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,0,0.5812934922902161,0.018095016479492188,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,1,0.5553294258546525,0.0183560848236084,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,2,0.4351292110651081,0.014790058135986328,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,3,0.4420628842841336,0.016324281692504883,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,4,0.4109890207016828,0.014129161834716797,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,5,0.5190659055045334,0.016399145126342773,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,6,0.3537087728023085,0.015600204467773438,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,7,0.23103810503891414,0.016301631927490234,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,8,0.5302681135111149,0.016102075576782227,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,9,0.5834036110761446,0.018178939819335938,True,,,,Deflation algorithm (non-pymanopt)
-robust_subspace_clustering,5,0.01,0,3.9659185924326066e-05,36.30972170829773,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,1,4.802136145027178e-05,33.17473101615906,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,2,5.449868578753024e-05,32.580933809280396,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,3,2.876830725461941e-05,43.790863275527954,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,4,4.682060180330092e-05,37.739372968673706,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,5,0.0001242954021429645,38.15823984146118,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,6,5.860940495841915e-05,32.0051109790802,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,7,4.644982664633075e-05,35.87902879714966,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,8,5.8334590048283346e-05,37.36434984207153,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.01,9,8.887837978047749e-05,31.89298105239868,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,0,0.0002177125176493083,32.9542191028595,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,1,0.00025363429370569695,34.692614793777466,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,2,0.0002925693200786033,31.644833087921143,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,3,0.00014195212758548565,41.45584011077881,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,4,0.000240651705768234,35.73193597793579,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,5,0.0006726571368600633,761.7524189949036,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,6,0.0003221279801133248,29.94988226890564,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,7,0.00024369919220213078,33.52057886123657,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,8,0.000316539083169098,37.440773010253906,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.05,9,0.0004989348401307958,31.341458082199097,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,0,0.0005232825575479622,32.35744309425354,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,1,0.0005172892232585588,34.53864288330078,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,2,0.0006444540719726738,31.35574507713318,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,3,0.00029106177155072284,170.9699158668518,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,4,0.0005794999370795481,33.78005409240723,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,5,0.0015249281870111733,32.91738772392273,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,6,0.0006915608107030968,33.75806474685669,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,7,0.0005575162216324633,35.689257860183716,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,8,0.0006877476927193182,38.471575021743774,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.1,9,0.0011625533796254018,32.36184120178223,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,0,0.002436179761361438,33.507543087005615,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,1,0.0016522010633713816,33.29834222793579,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,2,0.005638490267553898,35.66070914268494,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,3,0.0014393356419029587,35.72999405860901,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,4,0.36285475069864,32.2502920627594,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,5,0.008774877132504402,32.241211891174316,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,6,0.0018639462648899947,32.78746199607849,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,7,0.07404108479337326,116.43081712722778,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,8,0.004992536129724796,47.40733075141907,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.2,9,0.004587029946931124,34.56252908706665,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,0,0.03642061402025827,35.79232978820801,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,1,0.013768278361381878,33.52760195732117,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,2,0.05698833229387669,34.50076913833618,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,3,0.39441110854897293,40.77299404144287,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,4,0.43345234313684594,34.016427993774414,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,5,0.496449671947889,33.107524156570435,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,6,0.3689007130572364,34.969024896621704,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,7,0.46281160027434237,42.653728008270264,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,8,0.18705641298235173,40.96808409690857,True,,,,LASSO + Spectral clustering (non-pymanopt)
-robust_subspace_clustering,5,0.3,9,0.027839976633007097,32.905028104782104,True,,,,LASSO + Spectral clustering (non-pymanopt)
-pca_varimax,5,0.01,0,1.758264860614104e-09,0.0047149658203125,True,,,,R stats::varimax
-pca_varimax,5,0.01,1,2.4372517478797762e-09,0.0028901100158691406,True,,,,R stats::varimax
-pca_varimax,5,0.01,2,2.1329958654320415e-08,0.0035419464111328125,True,,,,R stats::varimax
-pca_varimax,5,0.01,3,5.463134298603678e-09,0.0024712085723876953,True,,,,R stats::varimax
-pca_varimax,5,0.01,4,1.803402787585878e-09,0.001983165740966797,True,,,,R stats::varimax
-pca_varimax,5,0.01,5,5.080202485206814e-09,0.0028219223022460938,True,,,,R stats::varimax
-pca_varimax,5,0.01,6,1.4165570990570765e-08,0.0019791126251220703,True,,,,R stats::varimax
-pca_varimax,5,0.01,7,1.3967873841141184e-08,0.002457857131958008,True,,,,R stats::varimax
-pca_varimax,5,0.01,8,1.7417081681023419e-09,0.002401113510131836,True,,,,R stats::varimax
-pca_varimax,5,0.01,9,8.691064977426187e-09,0.0020389556884765625,True,,,,R stats::varimax
-pca_varimax,5,0.05,0,4.048283474057249e-09,0.0024900436401367188,True,,,,R stats::varimax
-pca_varimax,5,0.05,1,4.90701075682741e-09,0.0028100013732910156,True,,,,R stats::varimax
-pca_varimax,5,0.05,2,1.797614397301201e-08,0.0022792816162109375,True,,,,R stats::varimax
-pca_varimax,5,0.05,3,1.7868971795012244e-08,0.0020329952239990234,True,,,,R stats::varimax
-pca_varimax,5,0.05,4,8.553204888292097e-09,0.002067089080810547,True,,,,R stats::varimax
-pca_varimax,5,0.05,5,1.103979685976431e-08,0.0020139217376708984,True,,,,R stats::varimax
-pca_varimax,5,0.05,6,1.064312078258172e-08,0.0024759769439697266,True,,,,R stats::varimax
-pca_varimax,5,0.05,7,2.736614965557458e-09,0.0022089481353759766,True,,,,R stats::varimax
-pca_varimax,5,0.05,8,7.996377199548343e-09,0.0019898414611816406,True,,,,R stats::varimax
-pca_varimax,5,0.05,9,1.7427608884413318e-08,0.0020122528076171875,True,,,,R stats::varimax
-pca_varimax,5,0.1,0,3.956951753315476e-09,0.002268075942993164,True,,,,R stats::varimax
-pca_varimax,5,0.1,1,7.193147321133917e-09,0.0020453929901123047,True,,,,R stats::varimax
-pca_varimax,5,0.1,2,1.4476661533886844e-08,0.002254009246826172,True,,,,R stats::varimax
-pca_varimax,5,0.1,3,4.8452610530332856e-09,0.0021140575408935547,True,,,,R stats::varimax
-pca_varimax,5,0.1,4,1.7819095572270807e-09,0.0022411346435546875,True,,,,R stats::varimax
-pca_varimax,5,0.1,5,1.3915109392890164e-08,0.0019888877868652344,True,,,,R stats::varimax
-pca_varimax,5,0.1,6,4.978713707274267e-09,0.002331256866455078,True,,,,R stats::varimax
-pca_varimax,5,0.1,7,4.381141220284513e-09,0.0021810531616210938,True,,,,R stats::varimax
-pca_varimax,5,0.1,8,2.020557413793351e-08,0.0021371841430664062,True,,,,R stats::varimax
-pca_varimax,5,0.1,9,1.4938654838160973e-08,0.0021467208862304688,True,,,,R stats::varimax
-pca_varimax,5,0.2,0,1.6743606532218976e-09,0.0020089149475097656,True,,,,R stats::varimax
-pca_varimax,5,0.2,1,2.2592920809630328e-08,0.0019440650939941406,True,,,,R stats::varimax
-pca_varimax,5,0.2,2,1.8094307402560745e-09,0.0025937557220458984,True,,,,R stats::varimax
-pca_varimax,5,0.2,3,1.0195916964909155e-08,0.0023119449615478516,True,,,,R stats::varimax
-pca_varimax,5,0.2,4,1.886595453565605e-08,0.0019462108612060547,True,,,,R stats::varimax
-pca_varimax,5,0.2,5,2.092258092273721e-09,0.0020532608032226562,True,,,,R stats::varimax
-pca_varimax,5,0.2,6,1.1766623975284356e-08,0.0018768310546875,True,,,,R stats::varimax
-pca_varimax,5,0.2,7,6.907007532345604e-09,0.002012968063354492,True,,,,R stats::varimax
-pca_varimax,5,0.2,8,1.4968187906514713e-08,0.0021359920501708984,True,,,,R stats::varimax
-pca_varimax,5,0.2,9,4.163588424351859e-09,0.0022211074829101562,True,,,,R stats::varimax
-pca_varimax,5,0.3,0,1.395435700781762e-08,0.00205230712890625,True,,,,R stats::varimax
-pca_varimax,5,0.3,1,1.6880551132994586e-09,0.0024881362915039062,True,,,,R stats::varimax
-pca_varimax,5,0.3,2,9.80555256918765e-09,0.002061128616333008,True,,,,R stats::varimax
-pca_varimax,5,0.3,3,1.309846916253478e-08,0.0019719600677490234,True,,,,R stats::varimax
-pca_varimax,5,0.3,4,2.0402023794626783e-09,0.002028942108154297,True,,,,R stats::varimax
-pca_varimax,5,0.3,5,2.1658304000642565e-09,0.0019011497497558594,True,,,,R stats::varimax
-pca_varimax,5,0.3,6,1.6314571655834076e-08,0.0022881031036376953,True,,,,R stats::varimax
-pca_varimax,5,0.3,7,9.308022128276334e-09,0.0020380020141601562,True,,,,R stats::varimax
-pca_varimax,5,0.3,8,2.4949516815438946e-09,0.0018699169158935547,True,,,,R stats::varimax
-pca_varimax,5,0.3,9,3.3167223357657305e-09,0.0018551349639892578,True,,,,R stats::varimax
-wfa1_manifold_optimization,5,0.01,0,1.5962621460643906e-05,5.227370023727417,True,2.793948077457118e-10,22,-0.0,"Terminated - min step_size reached after 22 iterations, 5.22 seconds."
-wfa1_manifold_optimization,5,0.01,1,4.6863867457739166e-05,5.685032844543457,True,9.978495129422008e-11,24,-0.0,"Terminated - min grad norm reached after 24 iterations, 5.68 seconds."
-wfa1_manifold_optimization,5,0.01,2,3.091628589217389e-05,6.82779598236084,True,2.555315166222727e-10,29,-0.0,"Terminated - min step_size reached after 29 iterations, 6.82 seconds."
-wfa1_manifold_optimization,5,0.01,3,1.6674726782218626e-05,5.405323028564453,True,6.234423488353766e-10,24,-0.0,"Terminated - min step_size reached after 24 iterations, 5.40 seconds."
-wfa1_manifold_optimization,5,0.01,4,3.490012767546513e-05,6.033779859542847,True,3.456768941628713e-10,25,0.0,"Terminated - min step_size reached after 25 iterations, 6.02 seconds."
-wfa1_manifold_optimization,5,0.01,5,4.393282569005276e-05,4.7016921043396,True,1.1957987491866291e-09,20,-0.0,"Terminated - min step_size reached after 20 iterations, 4.69 seconds."
-wfa1_manifold_optimization,5,0.01,6,4.1074687302839553e-05,6.6288580894470215,True,7.296730890773642e-10,30,-0.0,"Terminated - min step_size reached after 30 iterations, 6.62 seconds."
-wfa1_manifold_optimization,5,0.01,7,4.6202643610413014e-05,5.018160104751587,True,5.103922628485478e-10,21,-0.0,"Terminated - min step_size reached after 21 iterations, 5.01 seconds."
-wfa1_manifold_optimization,5,0.01,8,3.259621588996662e-05,3.9526941776275635,True,2.702414421351909e-10,16,-0.0,"Terminated - min step_size reached after 16 iterations, 3.94 seconds."
-wfa1_manifold_optimization,5,0.01,9,3.8356595188952516e-05,5.3402159214019775,True,1.1844333455030597e-10,23,-0.0,"Terminated - min step_size reached after 23 iterations, 5.33 seconds."
-wfa1_manifold_optimization,5,0.05,0,8.012462749557527e-05,5.435222625732422,True,8.476848156018418e-10,24,-0.0,"Terminated - min step_size reached after 24 iterations, 5.43 seconds."
-wfa1_manifold_optimization,5,0.05,1,0.00025367772371590795,4.28854513168335,True,6.965011932748915e-10,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.28 seconds."
-wfa1_manifold_optimization,5,0.05,2,0.00017168874787961693,4.674885034561157,True,2.349247092984473e-10,20,-0.0,"Terminated - min step_size reached after 20 iterations, 4.67 seconds."
-wfa1_manifold_optimization,5,0.05,3,8.469967303095327e-05,6.644180059432983,True,4.2288873524604435e-05,29,5.230152159488428e-13,"Terminated - min step_size reached after 29 iterations, 6.64 seconds."
-wfa1_manifold_optimization,5,0.05,4,0.00019373950987812424,4.826963901519775,True,1.1072656612271276e-09,19,0.0,"Terminated - min step_size reached after 19 iterations, 4.82 seconds."
-wfa1_manifold_optimization,5,0.05,5,0.00025849790174199987,4.773864984512329,True,3.961261060728506e-10,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.76 seconds."
-wfa1_manifold_optimization,5,0.05,6,0.00023054001344042079,5.044831991195679,True,2.864525896328018e-11,21,-0.0,"Terminated - min grad norm reached after 21 iterations, 5.04 seconds."
-wfa1_manifold_optimization,5,0.05,7,0.0002536816213691694,4.372909784317017,True,2.7753008048975246e-10,18,-0.0,"Terminated - min step_size reached after 18 iterations, 4.36 seconds."
-wfa1_manifold_optimization,5,0.05,8,0.0001632381443631697,5.6902101039886475,True,3.1549822890758236e-11,24,4.510375086143709e-09,"Terminated - min grad norm reached after 24 iterations, 5.68 seconds."
-wfa1_manifold_optimization,5,0.05,9,0.00021514480216517696,6.084950923919678,True,6.917899468301051e-10,26,-0.0,"Terminated - min step_size reached after 26 iterations, 6.08 seconds."
-wfa1_manifold_optimization,5,0.1,0,0.00022721168168887573,5.94631028175354,True,2.0992604849371087e-09,26,-0.0,"Terminated - min step_size reached after 26 iterations, 5.94 seconds."
-wfa1_manifold_optimization,5,0.1,1,0.0006182590404733981,5.768689870834351,True,1.7397162714353176e-09,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.76 seconds."
-wfa1_manifold_optimization,5,0.1,2,0.0003708822130046071,5.493396043777466,True,4.8037254982689e-10,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.48 seconds."
-wfa1_manifold_optimization,5,0.1,3,0.00019754447725402928,5.234256029129028,True,8.24736077927331e-10,24,-0.0,"Terminated - min step_size reached after 24 iterations, 5.23 seconds."
-wfa1_manifold_optimization,5,0.1,4,0.0005289208386139576,5.120331048965454,True,1.7728409361305021e-09,23,-0.0,"Terminated - min step_size reached after 23 iterations, 5.11 seconds."
-wfa1_manifold_optimization,5,0.1,5,0.0006611431012867125,5.323010206222534,True,5.773101982158827e-11,23,4.695058981445845e-10,"Terminated - min grad norm reached after 23 iterations, 5.31 seconds."
-wfa1_manifold_optimization,5,0.1,6,0.0004935220910967633,4.653905868530273,True,2.123011930982299e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.64 seconds."
-wfa1_manifold_optimization,5,0.1,7,0.0006311684114644612,4.620557069778442,True,1.2325058415001508e-09,20,0.0,"Terminated - min step_size reached after 20 iterations, 4.61 seconds."
-wfa1_manifold_optimization,5,0.1,8,0.00043265636165757543,3.7797670364379883,True,2.8195706619159472e-09,16,-0.0,"Terminated - min step_size reached after 16 iterations, 3.77 seconds."
-wfa1_manifold_optimization,5,0.1,9,0.00047161171437815053,5.276340961456299,True,1.557096349294673e-10,24,-0.0,"Terminated - min step_size reached after 24 iterations, 5.27 seconds."
-wfa1_manifold_optimization,5,0.2,0,0.0006374278026582077,4.092397689819336,True,8.643530150762419e-10,18,-0.0,"Terminated - min step_size reached after 18 iterations, 4.08 seconds."
-wfa1_manifold_optimization,5,0.2,1,0.0015544212277515098,4.406716346740723,True,1.0114487079997814e-09,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.40 seconds."
-wfa1_manifold_optimization,5,0.2,2,0.0011427192635068654,4.387515068054199,True,1.8355897564767195e-09,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.38 seconds."
-wfa1_manifold_optimization,5,0.2,3,0.000508025352698565,5.5930821895599365,True,6.136525307617166e-10,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.58 seconds."
-wfa1_manifold_optimization,5,0.2,4,0.0015187598477777763,6.132732152938843,True,3.4297024069268553e-09,28,-0.0,"Terminated - min step_size reached after 28 iterations, 6.12 seconds."
-wfa1_manifold_optimization,5,0.2,5,0.0014449448929994089,5.144730091094971,True,8.135251538335456e-10,24,-0.0,"Terminated - min step_size reached after 24 iterations, 5.14 seconds."
-wfa1_manifold_optimization,5,0.2,6,0.001424054955760459,4.477290153503418,True,0.0012166970535078024,20,6.216333255228332e-13,"Terminated - min step_size reached after 20 iterations, 4.47 seconds."
-wfa1_manifold_optimization,5,0.2,7,0.0015499065186075378,5.377387046813965,True,3.472292824597494e-09,24,0.0,"Terminated - min step_size reached after 24 iterations, 5.37 seconds."
-wfa1_manifold_optimization,5,0.2,8,0.0014101456277143066,5.762767314910889,True,8.204898366848801e-10,27,-0.0,"Terminated - min step_size reached after 27 iterations, 5.75 seconds."
-wfa1_manifold_optimization,5,0.2,9,0.0011970467350733655,4.610644102096558,True,2.5003227878282234e-09,19,0.0,"Terminated - min step_size reached after 19 iterations, 4.60 seconds."
-wfa1_manifold_optimization,5,0.3,0,0.0010242741945736598,3.502134084701538,True,6.992078815717021e-09,15,-0.0,"Terminated - min step_size reached after 15 iterations, 3.49 seconds."
-wfa1_manifold_optimization,5,0.3,1,0.00425650146332069,5.050457715988159,True,3.460351136594734e-09,23,-0.0,"Terminated - min step_size reached after 23 iterations, 5.04 seconds."
-wfa1_manifold_optimization,5,0.3,2,0.0036362760425589567,3.8463449478149414,True,2.0425390485829502e-09,16,-0.0,"Terminated - min step_size reached after 16 iterations, 3.84 seconds."
-wfa1_manifold_optimization,5,0.3,3,0.0017182226320388526,4.57034969329834,True,1.6447646278574165e-10,19,0.0,"Terminated - min step_size reached after 19 iterations, 4.56 seconds."
-wfa1_manifold_optimization,5,0.3,4,0.0038111793276375252,5.061186075210571,True,8.124193055739247e-10,22,-0.0,"Terminated - min step_size reached after 22 iterations, 5.05 seconds."
-wfa1_manifold_optimization,5,0.3,5,0.002704773583122353,4.012192010879517,True,8.776661740741458e-10,17,0.0,"Terminated - min step_size reached after 17 iterations, 4.00 seconds."
-wfa1_manifold_optimization,5,0.3,6,0.0030380499659563645,4.491912841796875,True,2.6189572234901366e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.48 seconds."
-wfa1_manifold_optimization,5,0.3,7,0.0034984274502631897,4.566128969192505,True,2.8516918588775135e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.56 seconds."
-wfa1_manifold_optimization,5,0.3,8,0.003179170924746729,5.348237752914429,True,4.160247886496259e-09,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.34 seconds."
-wfa1_manifold_optimization,5,0.3,9,0.0033208551754602723,6.576134204864502,True,1.9645063479080395e-09,30,-0.0,"Terminated - min step_size reached after 30 iterations, 6.57 seconds."
+deflation_varimax_random,5,0.01,0,0.45723475071829006,0.0168609619140625,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,1,0.47535747176305304,0.014379024505615234,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,2,0.6021028154251042,0.016801118850708008,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,3,0.4560835954505576,0.014896869659423828,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,4,0.7191442352569585,0.015609025955200195,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,5,0.5072380969384689,0.013923883438110352,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,6,0.6184385195579396,0.014843940734863281,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,7,0.6211933208828766,0.014966011047363281,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,8,0.499950485827174,0.014312028884887695,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.01,9,0.5856254320858655,0.015327930450439453,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,0,0.4193154907454353,0.014701128005981445,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,1,0.39728285264161667,0.016277790069580078,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,2,0.5377999862106606,0.014850139617919922,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,3,0.4848220888410627,0.01971888542175293,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,4,0.3878443842517462,0.01713395118713379,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,5,0.7577002316995202,0.016759634017944336,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,6,0.666663256373436,0.01730799674987793,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,7,0.5844154080632692,0.01626110076904297,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,8,0.4934172549194125,0.014878988265991211,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.05,9,0.5656039294559561,0.014648914337158203,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,0,0.42068357388638833,0.014636993408203125,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,1,0.4356413704581102,0.016916990280151367,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,2,0.4885199836790453,0.01797318458557129,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,3,0.5793410860819974,0.015685081481933594,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,4,0.4969938489510167,0.017936229705810547,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,5,0.7314489656257191,0.014796972274780273,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,6,0.6851944498968044,0.01619696617126465,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,7,0.5856443227728579,0.01630091667175293,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,8,0.506295350839057,0.016891002655029297,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.1,9,0.6168286168879842,0.01717996597290039,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,0,0.60491830071672,0.018823862075805664,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,1,0.5492282770721627,0.015249013900756836,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,2,0.6627432487168698,0.016642093658447266,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,3,0.6070499787267477,0.015551090240478516,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,4,0.3957380712926621,0.01613593101501465,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,5,0.7256192248273654,0.01640009880065918,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,6,0.6686404788107417,0.016198158264160156,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,7,0.5938299939864164,0.015608072280883789,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,8,0.6201515025257551,0.018349170684814453,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.2,9,0.7346013798036066,0.01503896713256836,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,0,0.6726046559750151,0.01583099365234375,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,1,0.5382610548730181,0.01663517951965332,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,2,0.7424401460693945,0.016813993453979492,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,3,0.617906752184393,0.01588273048400879,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,4,0.2950757684953152,0.015163898468017578,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,5,0.4504234769708872,0.018640995025634766,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,6,0.676197019728631,0.013900041580200195,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,7,0.5886874662408145,0.015654802322387695,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,8,0.7040691177528928,0.01749420166015625,True,,,,Deflation algorithm (non-pymanopt)
+deflation_varimax_random,5,0.3,9,0.6392736605449346,0.01549530029296875,True,,,,Deflation algorithm (non-pymanopt)
+robust_subspace_clustering,5,0.01,0,3.965918592432649e-05,35.12629294395447,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,1,4.802136145027104e-05,31.327327966690063,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,2,5.44986857875322e-05,31.296926975250244,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,3,2.87683072546202e-05,47.38787794113159,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,4,4.682060180330126e-05,41.174147844314575,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,5,0.00012429540214296445,36.491398096084595,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,6,5.860940495841829e-05,29.354076147079468,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,7,4.644982664633043e-05,34.836947202682495,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,8,5.8334590048282845e-05,36.4947566986084,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.01,9,8.88783797804773e-05,32.33399677276611,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,0,0.0002177125176493148,35.470986127853394,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,1,0.0002536342937057011,34.023173332214355,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,2,0.0002925693200786019,33.31517267227173,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,3,0.00014146892374388275,42.67404890060425,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,4,0.0002384632348268674,31.463858127593994,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,5,0.0006726571368600551,40.85893797874451,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,6,0.0003221279801133256,29.440799951553345,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,7,0.00024408487922847523,35.38239789009094,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,8,0.0003147121826640484,36.787041902542114,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.05,9,0.0004989348401307955,32.50370907783508,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,0,0.0005108306356650814,36.87110781669617,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,1,0.0005180620647120881,32.61872911453247,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,2,0.0006407619956015124,31.91783618927002,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,3,0.0002910617715507204,35.57938194274902,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,4,0.0005839284940977533,33.44902205467224,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,5,0.0014933745455399778,34.250715017318726,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,6,0.0007014734137273202,33.08911418914795,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,7,0.0005575930619562124,33.554075956344604,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,8,0.0006867228072745262,41.73898005485535,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.1,9,0.0011625533796253988,34.057776927948,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,0,0.0024224203219609685,34.59550619125366,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,1,0.0016522010633713885,33.40270805358887,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,2,0.005779552478792091,31.537408113479614,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,3,0.00125589557609274,32.8803448677063,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,4,0.3950801686265821,32.12841987609863,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,5,0.008793309166513271,33.79543590545654,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,6,0.0019248846536312643,31.967164993286133,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,7,0.03572636857380296,34.21082782745361,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,8,0.009711251626079912,47.84077000617981,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.2,9,0.004499598265270566,34.7180700302124,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,0,0.041009246078047956,32.905566930770874,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,1,0.024237869552480005,35.12352156639099,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,2,0.056729838889876115,35.03326392173767,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,3,0.23336176919732657,37.49342918395996,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,4,0.6648163737173934,34.02913689613342,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,5,0.6768618022103517,36.706139087677,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,6,0.34684039733012434,31.359031200408936,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,7,0.47236642858159666,42.12778687477112,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,8,0.27424126955101885,42.840535163879395,True,,,,LASSO + Spectral clustering (non-pymanopt)
+robust_subspace_clustering,5,0.3,9,0.02881329081599925,32.73551607131958,True,,,,LASSO + Spectral clustering (non-pymanopt)
+pca_varimax,5,0.01,0,0.5011677481563208,0.004191160202026367,True,,,,R stats::varimax
+pca_varimax,5,0.01,1,0.38489047792711734,0.002201080322265625,True,,,,R stats::varimax
+pca_varimax,5,0.01,2,0.6384249629924769,0.0022559165954589844,True,,,,R stats::varimax
+pca_varimax,5,0.01,3,0.538324491980168,0.0020110607147216797,True,,,,R stats::varimax
+pca_varimax,5,0.01,4,0.6601531934102896,0.001940011978149414,True,,,,R stats::varimax
+pca_varimax,5,0.01,5,0.4753706316011919,0.0020198822021484375,True,,,,R stats::varimax
+pca_varimax,5,0.01,6,0.7556922630887235,0.0019309520721435547,True,,,,R stats::varimax
+pca_varimax,5,0.01,7,0.6318094651331849,0.001936197280883789,True,,,,R stats::varimax
+pca_varimax,5,0.01,8,0.5059205406494576,0.002084016799926758,True,,,,R stats::varimax
+pca_varimax,5,0.01,9,0.6088665454162184,0.001895904541015625,True,,,,R stats::varimax
+pca_varimax,5,0.05,0,0.5011837949114182,0.0019328594207763672,True,,,,R stats::varimax
+pca_varimax,5,0.05,1,0.38492315264365956,0.002003908157348633,True,,,,R stats::varimax
+pca_varimax,5,0.05,2,0.6383884685063582,0.0021538734436035156,True,,,,R stats::varimax
+pca_varimax,5,0.05,3,0.5382684533919746,0.001989126205444336,True,,,,R stats::varimax
+pca_varimax,5,0.05,4,0.6599756078486936,0.0029408931732177734,True,,,,R stats::varimax
+pca_varimax,5,0.05,5,0.4753745462627748,0.0019309520721435547,True,,,,R stats::varimax
+pca_varimax,5,0.05,6,0.7555966824585736,0.00201416015625,True,,,,R stats::varimax
+pca_varimax,5,0.05,7,0.6317956430398921,0.002009868621826172,True,,,,R stats::varimax
+pca_varimax,5,0.05,8,0.5057755346824291,0.0018680095672607422,True,,,,R stats::varimax
+pca_varimax,5,0.05,9,0.6088963310558424,0.0019459724426269531,True,,,,R stats::varimax
+pca_varimax,5,0.1,0,0.5011963555815641,0.002012014389038086,True,,,,R stats::varimax
+pca_varimax,5,0.1,1,0.38482093769218806,0.0018134117126464844,True,,,,R stats::varimax
+pca_varimax,5,0.1,2,0.6383594340779741,0.0019409656524658203,True,,,,R stats::varimax
+pca_varimax,5,0.1,3,0.5382598193513333,0.0020170211791992188,True,,,,R stats::varimax
+pca_varimax,5,0.1,4,0.660040181836159,0.0018820762634277344,True,,,,R stats::varimax
+pca_varimax,5,0.1,5,0.47536370187713867,0.001961231231689453,True,,,,R stats::varimax
+pca_varimax,5,0.1,6,0.7555423723051601,0.001992940902709961,True,,,,R stats::varimax
+pca_varimax,5,0.1,7,0.6317897618357136,0.0018579959869384766,True,,,,R stats::varimax
+pca_varimax,5,0.1,8,0.5058526449572835,0.0018591880798339844,True,,,,R stats::varimax
+pca_varimax,5,0.1,9,0.6087702179223909,0.0019719600677490234,True,,,,R stats::varimax
+pca_varimax,5,0.2,0,0.5012321140369213,0.00189208984375,True,,,,R stats::varimax
+pca_varimax,5,0.2,1,0.3849021808609959,0.0018279552459716797,True,,,,R stats::varimax
+pca_varimax,5,0.2,2,0.6383416092398245,0.002101898193359375,True,,,,R stats::varimax
+pca_varimax,5,0.2,3,0.5382786695493809,0.0018990039825439453,True,,,,R stats::varimax
+pca_varimax,5,0.2,4,0.6600565353398105,0.0019659996032714844,True,,,,R stats::varimax
+pca_varimax,5,0.2,5,0.47537857669413064,0.0020177364349365234,True,,,,R stats::varimax
+pca_varimax,5,0.2,6,0.7555088328333418,0.0018661022186279297,True,,,,R stats::varimax
+pca_varimax,5,0.2,7,0.6317833854964547,0.0018723011016845703,True,,,,R stats::varimax
+pca_varimax,5,0.2,8,0.5057879149198534,0.0019769668579101562,True,,,,R stats::varimax
+pca_varimax,5,0.2,9,0.608854121848321,0.002081155776977539,True,,,,R stats::varimax
+pca_varimax,5,0.3,0,0.5011833287210986,0.0019021034240722656,True,,,,R stats::varimax
+pca_varimax,5,0.3,1,0.38494567554427506,0.0019540786743164062,True,,,,R stats::varimax
+pca_varimax,5,0.3,2,0.6384318763239316,0.0019347667694091797,True,,,,R stats::varimax
+pca_varimax,5,0.3,3,0.5382828709489957,0.0018830299377441406,True,,,,R stats::varimax
+pca_varimax,5,0.3,4,0.6601064610316894,0.0020151138305664062,True,,,,R stats::varimax
+pca_varimax,5,0.3,5,0.47537945253661584,0.0019009113311767578,True,,,,R stats::varimax
+pca_varimax,5,0.3,6,0.7556082605279252,0.0018868446350097656,True,,,,R stats::varimax
+pca_varimax,5,0.3,7,0.6317823629675955,0.002026081085205078,True,,,,R stats::varimax
+pca_varimax,5,0.3,8,0.5058355862993912,0.001867055892944336,True,,,,R stats::varimax
+pca_varimax,5,0.3,9,0.6088580743088294,0.0018498897552490234,True,,,,R stats::varimax
+wfa1_manifold_optimization,5,0.01,0,7.828260148483529e-06,6.3177831172943115,True,3.334383384777278e-10,27,-0.0,"Terminated - min step_size reached after 27 iterations, 6.31 seconds."
+wfa1_manifold_optimization,5,0.01,1,2.72301240869896e-05,4.887963056564331,True,4.615204059916646e-10,23,-0.0,"Terminated - min step_size reached after 23 iterations, 4.88 seconds."
+wfa1_manifold_optimization,5,0.01,2,2.8566750867208495e-05,5.076872110366821,True,2.618179431606821e-11,23,0.0,"Terminated - min grad norm reached after 23 iterations, 5.07 seconds."
+wfa1_manifold_optimization,5,0.01,3,1.261590751708027e-05,6.477252960205078,True,6.306758108472732e-11,31,-0.0,"Terminated - min grad norm reached after 31 iterations, 6.47 seconds."
+wfa1_manifold_optimization,5,0.01,4,2.3206820998266178e-05,5.184841156005859,True,8.225589258336029e-10,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.18 seconds."
+wfa1_manifold_optimization,5,0.01,5,5.966371944206518e-05,3.6141231060028076,True,6.717085900614859e-11,16,5.989809508152394e-10,"Terminated - min grad norm reached after 16 iterations, 3.61 seconds."
+wfa1_manifold_optimization,5,0.01,6,4.3114709222914264e-05,3.5079119205474854,True,8.793192143617128e-10,16,-0.0,"Terminated - min step_size reached after 16 iterations, 3.50 seconds."
+wfa1_manifold_optimization,5,0.01,7,1.3407543457775528e-05,4.0610511302948,True,0.000397820255175863,18,4.629380635115036e-14,"Terminated - min step_size reached after 18 iterations, 4.05 seconds."
+wfa1_manifold_optimization,5,0.01,8,3.639674511657763e-05,4.432797908782959,True,5.148302748473023e-10,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.42 seconds."
+wfa1_manifold_optimization,5,0.01,9,5.9233211532014094e-05,5.034276008605957,True,3.4931773057335984e-10,23,0.0,"Terminated - min step_size reached after 23 iterations, 5.03 seconds."
+wfa1_manifold_optimization,5,0.05,0,4.938120782182748e-05,5.303721904754639,True,0.00013815273282727347,24,9.291856526846901e-13,"Terminated - min step_size reached after 24 iterations, 5.29 seconds."
+wfa1_manifold_optimization,5,0.05,1,0.00014374918471063013,5.265223026275635,True,4.083345068235054e-11,25,-0.0,"Terminated - min grad norm reached after 25 iterations, 5.26 seconds."
+wfa1_manifold_optimization,5,0.05,2,0.00015531100197906862,3.8831710815429688,True,5.327131044157899e-09,18,-0.0,"Terminated - min step_size reached after 18 iterations, 3.87 seconds."
+wfa1_manifold_optimization,5,0.05,3,7.200813490813092e-05,4.458389043807983,True,1.9573912830927885e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.45 seconds."
+wfa1_manifold_optimization,5,0.05,4,0.00010926516010921377,5.143951177597046,True,1.954258531197426e-09,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.14 seconds."
+wfa1_manifold_optimization,5,0.05,5,0.0003592579000002693,4.569821834564209,True,4.984881539687181e-11,21,2.1372797337028752e-11,"Terminated - min grad norm reached after 21 iterations, 4.56 seconds."
+wfa1_manifold_optimization,5,0.05,6,0.00022201959205432666,5.393378973007202,True,8.823992045385468e-10,25,0.0,"Terminated - min step_size reached after 25 iterations, 5.38 seconds."
+wfa1_manifold_optimization,5,0.05,7,8.750600911790447e-05,4.863887071609497,True,0.0006263943638643748,22,2.99092945616062e-13,"Terminated - min step_size reached after 22 iterations, 4.86 seconds."
+wfa1_manifold_optimization,5,0.05,8,0.00021021139241405063,6.390352964401245,True,2.9530565815598714e-10,30,0.0,"Terminated - min step_size reached after 30 iterations, 6.38 seconds."
+wfa1_manifold_optimization,5,0.05,9,0.0003311130679357841,4.4453160762786865,True,3.080879108798677e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.44 seconds."
+wfa1_manifold_optimization,5,0.1,0,0.0001228478250720467,4.780224800109863,True,1.4287179547991083e-09,23,-0.0,"Terminated - min step_size reached after 23 iterations, 4.77 seconds."
+wfa1_manifold_optimization,5,0.1,1,0.0003658544209322597,5.267268896102905,True,2.9126574731209734e-10,24,0.0,"Terminated - min step_size reached after 24 iterations, 5.26 seconds."
+wfa1_manifold_optimization,5,0.1,2,0.00034688124109462934,5.789146900177002,True,1.5808192948871165e-10,27,0.0,"Terminated - min step_size reached after 27 iterations, 5.78 seconds."
+wfa1_manifold_optimization,5,0.1,3,0.00015481732419242767,4.843977928161621,True,5.875213024457103e-09,22,0.0,"Terminated - min step_size reached after 22 iterations, 4.84 seconds."
+wfa1_manifold_optimization,5,0.1,4,0.00027079962114512845,5.439928770065308,True,7.082568427735033e-10,26,-0.0,"Terminated - min step_size reached after 26 iterations, 5.43 seconds."
+wfa1_manifold_optimization,5,0.1,5,0.0009355237059229571,5.255827903747559,True,9.237384312861602e-10,24,0.0,"Terminated - min step_size reached after 24 iterations, 5.25 seconds."
+wfa1_manifold_optimization,5,0.1,6,0.0004594970593570894,4.401925802230835,True,2.8252735017753937e-10,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.39 seconds."
+wfa1_manifold_optimization,5,0.1,7,0.00039286040856353297,4.149748086929321,True,0.0043320272388882195,19,5.277818940778888e-13,"Terminated - min step_size reached after 19 iterations, 4.14 seconds."
+wfa1_manifold_optimization,5,0.1,8,0.0005457275047910217,4.536920070648193,True,4.825632171725881e-10,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.53 seconds."
+wfa1_manifold_optimization,5,0.1,9,0.0009236240159412668,5.465780973434448,True,0.002497089369907123,25,6.349541494791493e-13,"Terminated - min step_size reached after 25 iterations, 5.46 seconds."
+wfa1_manifold_optimization,5,0.2,0,0.0002627715295600223,4.633260011672974,True,0.002055276447710862,21,5.182369580676486e-13,"Terminated - min step_size reached after 21 iterations, 4.62 seconds."
+wfa1_manifold_optimization,5,0.2,1,0.0007704420390138933,4.201565980911255,True,0.0003803864381380343,19,1.8640733467690395e-13,"Terminated - min step_size reached after 19 iterations, 4.19 seconds."
+wfa1_manifold_optimization,5,0.2,2,0.0011354748982655837,6.027182102203369,True,0.0017629736080916533,28,1.7514770346341951e-13,"Terminated - min step_size reached after 28 iterations, 6.02 seconds."
+wfa1_manifold_optimization,5,0.2,3,0.0006325970837566087,5.5965330600738525,True,9.80635125629397e-10,27,-0.0,"Terminated - min step_size reached after 27 iterations, 5.59 seconds."
+wfa1_manifold_optimization,5,0.2,4,0.0009653519375442249,6.795114040374756,True,0.0051467384861264105,32,1.2909128627577963e-13,"Terminated - min step_size reached after 32 iterations, 6.79 seconds."
+wfa1_manifold_optimization,5,0.2,5,0.0023682484526392454,4.019675970077515,True,0.0015687931818845577,18,8.669231998650389e-13,"Terminated - min step_size reached after 18 iterations, 4.01 seconds."
+wfa1_manifold_optimization,5,0.2,6,0.001063564580418146,4.356683015823364,True,0.002183990357857127,20,5.274090995432647e-13,"Terminated - min step_size reached after 20 iterations, 4.35 seconds."
+wfa1_manifold_optimization,5,0.2,7,0.0008478609386482353,5.4172680377960205,True,0.0016954542009195138,25,3.141105827783793e-13,"Terminated - min step_size reached after 25 iterations, 5.41 seconds."
+wfa1_manifold_optimization,5,0.2,8,0.0017483795980939045,5.194217920303345,True,2.992573098695528e-10,25,-0.0,"Terminated - min step_size reached after 25 iterations, 5.19 seconds."
+wfa1_manifold_optimization,5,0.2,9,0.0022740408788363502,5.394925832748413,True,0.0027487758007894874,25,7.683514353535704e-13,"Terminated - min step_size reached after 25 iterations, 5.39 seconds."
+wfa1_manifold_optimization,5,0.3,0,0.0006145839759818029,5.262101173400879,True,0.0023898535619351134,24,5.16819580315784e-13,"Terminated - min step_size reached after 24 iterations, 5.25 seconds."
+wfa1_manifold_optimization,5,0.3,1,0.002074680331574907,4.810130834579468,True,0.003779886945843953,22,4.060429894756545e-13,"Terminated - min step_size reached after 22 iterations, 4.80 seconds."
+wfa1_manifold_optimization,5,0.3,2,0.0024813333655512274,5.365496873855591,True,2.003578448543293e-09,26,-0.0,"Terminated - min step_size reached after 26 iterations, 5.36 seconds."
+wfa1_manifold_optimization,5,0.3,3,0.0021213600850654374,4.146183967590332,True,1.6746554633332675e-09,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.14 seconds."
+wfa1_manifold_optimization,5,0.3,4,0.001781402476755879,4.9923012256622314,True,0.0007053977013327371,23,2.951056074097189e-13,"Terminated - min step_size reached after 23 iterations, 4.98 seconds."
+wfa1_manifold_optimization,5,0.3,5,0.005161901226717423,4.225613117218018,True,1.0551905182021897e-09,19,-0.0,"Terminated - min step_size reached after 19 iterations, 4.22 seconds."
+wfa1_manifold_optimization,5,0.3,6,0.002091680740500276,3.947817087173462,True,1.3529203653684922e-09,18,-0.0,"Terminated - min step_size reached after 18 iterations, 3.94 seconds."
+wfa1_manifold_optimization,5,0.3,7,0.0022114577487065217,5.508400917053223,True,0.002442770856577498,25,8.067256342949304e-13,"Terminated - min step_size reached after 25 iterations, 5.50 seconds."
+wfa1_manifold_optimization,5,0.3,8,0.0037317994869036537,4.459993124008179,True,2.6297212458092903e-09,21,-0.0,"Terminated - min step_size reached after 21 iterations, 4.45 seconds."
+wfa1_manifold_optimization,5,0.3,9,0.00538837081242618,5.216360092163086,True,0.000325849584070929,24,6.814328321398071e-13,"Terminated - min step_size reached after 24 iterations, 5.21 seconds."

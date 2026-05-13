@@ -26,6 +26,6 @@ def approx_metric_matching(estimated_matrix, true_matrix_axis):
 
 
 def normalized_frame_error(estimated_matrix, true_matrix_axis):
-    assignment_error = approx_metric_matching(estimated_matrix, true_matrix_axis)
+    assignment_error = approx_metric_matching(estimated_matrix.T, true_matrix_axis.T)
     normalizer = np.linalg.norm(true_matrix_axis, ord='fro') ** 2
     return assignment_error, assignment_error / normalizer

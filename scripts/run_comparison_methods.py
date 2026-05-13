@@ -23,16 +23,33 @@ NOISE_HEADER = [
     'gradient_norm', 'iterations', 'step_size', 'stopping_criterion'
 ]
 
+def random_orthogonal(dim):
+    Q, R = np.linalg.qr(np.random.randn(dim, dim))
+    signs = np.sign(np.diag(R))
+    signs[signs == 0] = 1
+    return Q * signs
 
 def generate_data(data_type, n_samples, dim, noise_level):
     generator = DataGenerator(n_samples, dim)
-    if data_type == 'gaussian':
+
+    rotated = data_type.endswith('_rotated')
+    base_type = data_type.replace('_rotated', '')
+
+    if base_type == 'gaussian':
         data = generator.gaussian_factor_analysis_data(t=noise_level)
-    elif data_type == 'exponential':
+    elif base_type == 'exponential':
         data = generator.exponential_factor_analysis_data()
     else:
         raise ValueError(f'Unknown data type: {data_type}')
-    return data, generator.matrix_axis
+
+    true_frames = generator.matrix_axis
+
+    if rotated:
+        A = random_orthogonal(dim)
+        data = data @ A.T
+        true_frames = A @ true_frames
+
+    return data, true_frames
 
 
 def run_single(method, data_type, dim, n_samples, noise_level, trial, seed=42):
@@ -58,7 +75,7 @@ def run_single(method, data_type, dim, n_samples, noise_level, trial, seed=42):
 
 
 def run_frame_accuracy(output_dir, dimensions=(2, 5, 10, 15, 25, 50), sample_sizes=(1000,),
-                       data_types=('gaussian',), noise_level=0.05, n_trials=10, methods=METHODS):
+                       data_types=('gaussian_rotated',), noise_level=0.05, n_trials=10, methods=METHODS):
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / 'frame_accuracy_results.csv'
     with open(path, 'w', newline='') as f:
@@ -90,7 +107,7 @@ def run_noise_robustness(output_dir, dimensions=(5,), noise_levels=(0.01, 0.05, 
                 for noise_level in noise_levels:
                     print(f'Noise robustness: {method}, d={dim}, noise={noise_level}')
                     for trial in range(n_trials):
-                        result = run_single(method, 'gaussian', dim, n_samples, noise_level, trial)
+                        result = run_single(method, 'gaussian_rotated', dim, n_samples, noise_level, trial)
                         writer.writerow({key: result[key] for key in NOISE_HEADER})
                         f.flush()
     return path

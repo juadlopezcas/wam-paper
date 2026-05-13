@@ -1,8 +1,8 @@
 Dimension,Number Points,Assignment Error,Normalized Error,Iterations,Stopping Criterion,Step Size,Gradient Norm
-2,100,0.01230376174996495,0.006151880874982473,17,"Terminated - min step_size reached after 17 iterations, 0.36 seconds.",-0.0,1.0892908136978135e-09
-2,200,0.00036098954218354734,0.00018049477109177364,27,"Terminated - min step_size reached after 27 iterations, 1.15 seconds.",-0.0,1.8728594485097033e-09
+2,100,0.01230376174996495,0.006151880874982473,17,"Terminated - min step_size reached after 17 iterations, 0.34 seconds.",-0.0,1.0892908136978135e-09
+2,200,0.00036098954218354734,0.00018049477109177364,27,"Terminated - min step_size reached after 27 iterations, 1.14 seconds.",-0.0,1.8728594485097033e-09
 2,400,0.00015124765664352392,7.562382832176195e-05,11,"Terminated - min step_size reached after 11 iterations, 1.08 seconds.",-0.0,5.873757983354323e-10
-2,800,1.0012436942955369e-07,5.0062184714776833e-08,17,"Terminated - min step_size reached after 17 iterations, 3.11 seconds.",-0.0,3.176396726166304e-10
-2,1600,3.0348539206525148e-05,1.517426960326257e-05,19,"Terminated - min step_size reached after 19 iterations, 7.08 seconds.",-0.0,1.6632157801495402e-09
-2,3200,1.4965017159663176e-05,7.482508579831586e-06,16,"Terminated - min step_size reached after 16 iterations, 11.70 seconds.",-0.0,5.259044677041118e-09
-2,6400,4.225186047894425e-06,2.112593023947212e-06,28,"Terminated - min step_size reached after 28 iterations, 36.90 seconds.",-0.0,1.5456528898360635e-09
+2,800,1.0012436942955369e-07,5.0062184714776833e-08,17,"Terminated - min step_size reached after 17 iterations, 3.03 seconds.",-0.0,3.176396726166304e-10
+2,1600,3.0348539206525148e-05,1.517426960326257e-05,19,"Terminated - min step_size reached after 19 iterations, 6.68 seconds.",-0.0,1.6632157801495402e-09
+2,3200,1.4965017159663176e-05,7.482508579831586e-06,16,"Terminated - min step_size reached after 16 iterations, 11.15 seconds.",-0.0,5.259044677041118e-09
+2,6400,4.225186047894425e-06,2.112593023947212e-06,28,"Terminated - min step_size reached after 28 iterations, 35.66 seconds.",-0.0,1.5456528898360635e-09
