@@ -36,16 +36,18 @@ class DataGenerator:
         np.random.shuffle(samples)
         return samples
 
-    def exponential_factor_analysis_data(self):
+    def exponential_factor_analysis_data(self, apply_reference_rotation=False):
         n = self.num_samples
         d = self.num_dimensions
         samples = np.random.choice([-1, 1], size=(n, d)) * expon.rvs(size=(n, d)) ** 1.3
         if d == 2:
             samples = scale(samples)
-            # Keep the base double-exponential data axis-aligned. Figure scripts
-            # can apply their own controlled rotations when needed.
-            # rotation = np.linalg.svd([[1, -2], [-3, 1]])[0]
-            # samples = samples @ rotation
+            # Keep the default double-exponential data axis-aligned. The
+            # illustrative frame figure uses the reference rotation from the
+            # original exploratory script.
+            if apply_reference_rotation:
+                rotation = np.linalg.svd([[1, -2], [-3, 1]])[0]
+                samples = samples @ rotation
         return samples
 
     def student_t_data(self):

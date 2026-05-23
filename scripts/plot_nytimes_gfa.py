@@ -6,6 +6,7 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.ticker import FuncFormatter
 
 from scripts import methods
 from scripts.plot_style import PaperPlotStyle
@@ -115,6 +116,13 @@ def component_localization_scores(X):
     return np.rint(scores).astype(int)
 
 
+def compact_tick_label(value, _position):
+    """Short tick labels for dense pairplot axes."""
+    if abs(value) < 5e-5:
+        return '0'
+    return f'{value:.3g}'
+
+
 def draw_projected_axis(ax, direction, xlim, ylim, color, linewidth):
     """Draw a line through the origin clipped to the current panel limits."""
     if np.linalg.norm(direction) <= np.finfo(float).eps:
@@ -146,10 +154,12 @@ def configure_pair_axis(ax, i, j, k, xlim, ylim, label_prefix):
     ax.set_xlim(xlim)
     ax.set_ylim(ylim)
     ax.grid(False)
+    ax.xaxis.set_major_formatter(FuncFormatter(compact_tick_label))
+    ax.yaxis.set_major_formatter(FuncFormatter(compact_tick_label))
     ax.tick_params(
         axis='both',
         which='major',
-        labelsize=6,
+        labelsize=10,
         length=2.0,
         width=0.6,
         pad=1.5,
@@ -200,7 +210,7 @@ def plot_pairplot_block(
                     f'{diagonal_scores[i]}',
                     ha='center',
                     va='center',
-                    fontsize=plt.rcParams['axes.labelsize'],
+                    fontsize=plt.rcParams['axes.labelsize'] + 2,
                     transform=ax.transAxes,
                 )
                 continue
@@ -279,9 +289,8 @@ def render_nytimes_pairplot(
     pca_scores = component_localization_scores(X)
     rotated_scores = component_localization_scores(X_rotated)
 
-    fig = plt.figure(figsize=(14.5, 6.45))
-    fig.suptitle(title, y=0.995, fontsize=plt.rcParams['axes.titlesize'])
-    outer = fig.add_gridspec(1, 2, left=0.035, right=0.995, bottom=0.055, top=0.935, wspace=0.20)
+    fig = plt.figure(figsize=(14.5, 6.2))
+    outer = fig.add_gridspec(1, 2, left=0.035, right=0.995, bottom=0.055, top=0.985, wspace=0.20)
     left_grid = outer[0].subgridspec(k, k, wspace=0.12, hspace=0.12)
     right_grid = outer[1].subgridspec(k, k, wspace=0.12, hspace=0.12)
 
@@ -295,7 +304,7 @@ def render_nytimes_pairplot(
         label_prefix='p',
         rotation=rotation,
         show_pca_axes=True,
-        show_rotation_axes=True,
+        show_rotation_axes=False,
     )
     plot_pairplot_block(
         fig,

@@ -26,14 +26,20 @@ python main.py --all
 Generate individual figures:
 
 ```bash
-python main.py --main-figure
+python main.py --main-gradient
 python main.py --log-iterations
 python main.py --comparison-methods
 python main.py --rates
 python main.py --nytimes  # requires data/nytimes_pca.npz
 ```
 
-Figures are saved in `figures/` as PDF and PNG files, including `fig_main.pdf` for the introductory problem figure. The NYTimes figure is optional because it requires the cached PCA factor file `data/nytimes_pca.npz`.
+Figures are saved in `figures/` as PDF and PNG files, including `fig_main_gradient.pdf` for the introductory gradient figure. The NYTimes figure is optional because it requires the cached PCA factor file `data/nytimes_pca.npz`.
+
+The rotated Student-t frame figure uses R's `stats::varimax` through `rpy2`, so it is optional and not included in `--all`:
+
+```bash
+python main.py --student-t-frames
+```
 
 ## Regenerate Experiment CSVs
 
