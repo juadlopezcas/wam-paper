@@ -29,7 +29,7 @@ def sample_gaussian_mixture_measure(n_samples, seed=None):
     """Sample the 2D Gaussian mixture used by the main gradient figure."""
     if seed is not None:
         np.random.seed(seed)
-    return DataGenerator(n_samples, 2).gaussian_factor_analysis_data()
+    return DataGenerator(n_samples, 2).gaussian_factor_analysis_data(main_figure_mixture=True)
 
 
 def orthonormal_frame(theta):

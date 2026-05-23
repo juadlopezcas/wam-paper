@@ -1,4 +1,5 @@
 from pathlib import Path
+from types import SimpleNamespace
 
 import matplotlib
 
@@ -63,25 +64,29 @@ def run_global_gfa_rotation(X, max_iterations=1000, verbosity=0):
 
 
 def run_global_varimax_rotation(X, max_iterations=1000, verbosity=0):
-    """Run one global Varimax rotation using the shared Varimax loss."""
-    methods.ensure_optimization_deps()
-    k = X.shape[1]
-    manifold = methods.manifolds.SpecialOrthogonalGroup(k)
-    solver = methods.optimizers.SteepestDescent(
-        verbosity=verbosity,
+    """Run one global Varimax rotation with R stats::varimax on PCA factors."""
+    methods.ensure_r_varimax_deps()
+    varimax_on_factors = methods.ro.r(
+        """
+        function(factors) {
+          vm <- stats::varimax(as.matrix(factors), normalize=FALSE, eps=1e-5)
+          list(
+            rotated = unclass(vm$loadings),
+            rotmat = unclass(vm$rotmat)
+          )
+        }
+        """
+    )
+    res = varimax_on_factors(methods.np_to_r(X))
+    rotation = methods.r_to_np(res.rx2('rotmat'))
+    result = SimpleNamespace(
+        iterations=None,
+        gradient_norm=None,
+        stopping_criterion='R stats::varimax',
         max_iterations=max_iterations,
-        min_gradient_norm=1e-10,
-        min_step_size=1e-12,
+        verbosity=verbosity,
     )
-    problem = methods.pymanopt.Problem(
-        manifold=manifold,
-        cost=methods.varimax_loss_factory(manifold, X),
-    )
-    # X is already represented in PCA coordinates, so the identity rotation
-    # initializes Varimax at the principal directions.
-    principal_directions = np.identity(k)
-    result = solver.run(problem, initial_point=principal_directions)
-    return np.asarray(result.point), result
+    return rotation, result
 
 
 def symmetric_component_limits(X, quantile=0.995):

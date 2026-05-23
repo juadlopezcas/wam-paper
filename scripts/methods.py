@@ -31,7 +31,8 @@ def ensure_r_varimax_deps():
     except ImportError as exc:
         raise ImportError(
             "Running pca_varimax with R requires rpy2 and a working R installation. "
-            "Install R, then run `pip install rpy2`."
+            "Create the conda environment with `conda env create -f environment.yml` "
+            "and activate it with `conda activate wamfigs`."
         ) from exc
 
     ro = ro_module
@@ -239,25 +240,6 @@ def run_deflation_varimax(data, dim, initialization='random'):
     return model.components_.T, time.time() - start_time, True, {
         'stopping_criterion': 'Deflation algorithm (non-pymanopt)'
     }
-
-
-def varimax_loss_factory(manifold, pca_components):
-    """Kaiser-style Varimax loss from the original comparison experiment."""
-    ensure_optimization_deps()
-
-    @pymanopt.function.autograd(manifold)
-    def cost(Rot):
-        UR = pca_components @ Rot
-        _, k = UR.shape
-        varimax_sum = 0.0
-        for col in range(k):
-            column = UR[:, col]
-            fourth_moment = np.mean(column ** 4)
-            second_moment_squared = np.mean(column ** 2) ** 2
-            varimax_sum += fourth_moment - second_moment_squared
-        return varimax_sum
-
-    return cost
 
 
 def run_pca_varimax(data, dim):

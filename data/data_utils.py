@@ -11,10 +11,12 @@ class DataGenerator:
         self.num_dimensions = num_dimensions
         self.matrix_axis = np.identity(self.num_dimensions)
 
-    def gaussian_factor_analysis_data(self, t=0.05):
+    def gaussian_factor_analysis_data(self, t=0.05, main_figure_mixture=False):
         n_samples = self.num_samples
         d = self.num_dimensions
-        if d == 2:
+        if main_figure_mixture:
+            if d != 2:
+                raise ValueError('main_figure_mixture=True is only defined for num_dimensions=2.')
             u = 0.92
             covariances = [np.array([[1, u], [u, 1]]), np.array([[1, -u], [-u, 1]])]
             samples = np.vstack([

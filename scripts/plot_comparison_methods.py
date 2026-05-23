@@ -104,9 +104,9 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
     frame_grouped = load_frame_accuracy_results(data_dir / 'frame_accuracy_results.csv')
     noise_grouped, noise_levels = load_noise_robustness_results(data_dir / 'noise_robustness_results.csv')
 
-    dims = [2, 5, 10, 15, 25, 50]
+    dims = [2, 5, 10, 15, 25, 50, 100]
     data_type = 'gaussian_rotated'
-    sample_size = 1000
+    sample_size = 2000
     noise_dimension = 5
 
     fig, axes = plt.subplots(2, 2, figsize=(6.8, 5.2), sharex=False, sharey=False)

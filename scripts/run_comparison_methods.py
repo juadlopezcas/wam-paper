@@ -74,7 +74,7 @@ def run_single(method, data_type, dim, n_samples, noise_level, trial, seed=42):
     }
 
 
-def run_frame_accuracy(output_dir, dimensions=(2, 5, 10, 15, 25, 50), sample_sizes=(1000,),
+def run_frame_accuracy(output_dir, dimensions=(2, 5, 10, 15, 25, 50, 100), sample_sizes=(2000,),
                        data_types=('gaussian_rotated',), noise_level=0.05, n_trials=10, methods=METHODS):
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / 'frame_accuracy_results.csv'
