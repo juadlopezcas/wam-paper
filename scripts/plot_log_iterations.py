@@ -85,8 +85,8 @@ def plot_log_iterations(
     n_series = [{'n_points': n, 'dim': fixed_dim, 'label': f'$n={n}$'} for n in n_points_list]
     d_series = [{'n_points': fixed_n_points, 'dim': d, 'label': f'$d={d}$'} for d in dim_list]
 
-    fig = plt.figure(figsize=(9.4, 5.2))
-    grid = fig.add_gridspec(2, 2, width_ratios=[1.0, 1.55], right=0.875, wspace=0.08, hspace=0.34)
+    fig = plt.figure(figsize=(10.8, 6.0))
+    grid = fig.add_gridspec(2, 2, width_ratios=[1.0, 1.55], right=0.885, wspace=0.08, hspace=0.34)
     ax_gaussian_n = fig.add_subplot(grid[0, 0])
     ax_gaussian_d = fig.add_subplot(grid[1, 0])
     top_right = grid[0, 1].subgridspec(1, 2, wspace=0.36)
@@ -109,13 +109,13 @@ def plot_log_iterations(
     for ax, data_type, series_specs, title in panels:
         all_missing.extend(plot_panel(ax, series_specs, data_type, title, style, data_dir))
 
-    ax_gaussian_n.set_ylabel('Error')
-    ax_gaussian_d.set_ylabel('Error')
+    ax_gaussian_n.set_ylabel('Squared frame error')
+    ax_gaussian_d.set_ylabel('Squared frame error')
     ax_gaussian_n.set_xlim(left=0, right=25)
     ax_gaussian_d.set_xlim(left=0, right=32)
-    ax_exp_n.set_xlim(left=0, right=30)
+    ax_exp_n.set_xlim(left=0, right=25)
     ax_exp_d.set_xlim(left=0, right=30)
-    ax_student_n.set_xlim(left=0, right=30)
+    ax_student_n.set_xlim(left=0, right=25)
     ax_student_d.set_xlim(left=0, right=40)
 
     legend_kwargs = {

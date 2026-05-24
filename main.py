@@ -1,6 +1,7 @@
 import argparse
 
 from scripts.plot_comparison_methods import plot_comparison_methods
+from scripts.plot_convergence_delta import plot_convergence_delta
 from scripts.plot_exponential_frames import plot_student_t_frames
 from scripts.plot_log_iterations import plot_log_iterations
 from scripts.plot_main_gradient_figure import create_main_gradient_figure
@@ -13,6 +14,7 @@ def parse_args():
     parser.add_argument('--all', action='store_true', help='Generate all figures from existing CSVs.')
     parser.add_argument('--log-iterations', action='store_true', help='Generate fig_log_iterations.')
     parser.add_argument('--comparison-methods', action='store_true', help='Generate fig_comparison_completing_methods.')
+    parser.add_argument('--convergence-delta', action='store_true', help='Generate fig_convergence_vs_delta.')
     parser.add_argument('--rates', action='store_true', help='Generate fig_rates_combined.')
     parser.add_argument('--main-gradient', action='store_true', help='Generate fig_main_gradient.')
     parser.add_argument('--student-t-frames', action='store_true', help='Generate fig_student_t_frames. Requires R and rpy2.')
@@ -27,6 +29,7 @@ def main():
     run_all = args.all or not (
         args.log_iterations
         or args.comparison_methods
+        or args.convergence_delta
         or args.rates
         or args.main_gradient
         or args.student_t_frames
@@ -56,6 +59,9 @@ def main():
             from scripts.run_comparison_methods import run_comparison_suite
             run_comparison_suite(n_trials=args.trials)
         plot_comparison_methods()
+
+    if run_all or args.convergence_delta:
+        plot_convergence_delta()
 
     if run_all or args.rates:
         if args.generate:

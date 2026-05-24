@@ -73,6 +73,23 @@ def plot_series(ax, x_values, grouped, key_fn, style, metric):
         )
 
 
+def available_dimension_grid(grouped, data_type, requested_sample_size):
+    available = sorted({
+        sample_size
+        for _, _, row_data_type, sample_size in grouped
+        if row_data_type == data_type
+    })
+    if not available:
+        raise ValueError(f'No frame accuracy results found for {data_type}.')
+    sample_size = requested_sample_size if requested_sample_size in available else max(available)
+    dims = sorted({
+        dimension
+        for _, dimension, row_data_type, row_sample_size in grouped
+        if row_data_type == data_type and row_sample_size == sample_size
+    })
+    return sample_size, dims
+
+
 def format_axis(ax, x_values, xlabel, ylabel, x_log=False, y_log=True):
     if x_log:
         ax.set_xscale('log')
@@ -104,18 +121,18 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
     frame_grouped = load_frame_accuracy_results(data_dir / 'frame_accuracy_results.csv')
     noise_grouped, noise_levels = load_noise_robustness_results(data_dir / 'noise_robustness_results.csv')
 
-    dims = [2, 5, 10, 15, 25, 50, 100]
     data_type = 'gaussian_rotated'
-    sample_size = 2000
+    requested_sample_size = 2000
+    sample_size, dims = available_dimension_grid(frame_grouped, data_type, requested_sample_size)
     noise_dimension = 5
 
-    fig, axes = plt.subplots(2, 2, figsize=(6.8, 5.2), sharex=False, sharey=False)
+    fig, axes = plt.subplots(2, 2, figsize=(8.8, 6.2), sharex=False, sharey=False)
     ax_error_dim, ax_runtime_dim = axes[0]
     ax_error_noise, ax_runtime_noise = axes[1]
 
     plot_series(ax_error_dim, dims, frame_grouped,
                 lambda method, d: (method, d, data_type, sample_size), style, 'frame_error')
-    format_axis(ax_error_dim, dims, 'Dimension', 'Mean frame error', y_log=True)
+    format_axis(ax_error_dim, dims, 'Dimension', 'Squared frame error', x_log=True, y_log=True)
 
     plot_series(ax_runtime_dim, dims, frame_grouped,
                 lambda method, d: (method, d, data_type, sample_size), style, 'runtime')
@@ -124,7 +141,7 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
 
     plot_series(ax_error_noise, noise_levels, noise_grouped,
                 lambda method, tau: (method, noise_dimension, tau), style, 'frame_error')
-    format_axis(ax_error_noise, noise_levels, 'Noise level', 'Mean frame error', y_log=True)
+    format_axis(ax_error_noise, noise_levels, 'Noise level', 'Squared frame error', y_log=True)
 
     plot_series(ax_runtime_noise, noise_levels, noise_grouped,
                 lambda method, tau: (method, noise_dimension, tau), style, 'runtime')
@@ -138,7 +155,7 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
     )
 
     figure_dir.mkdir(parents=True, exist_ok=True)
-    fig.tight_layout(rect=[0, 0, 1, 0.90])
+    fig.tight_layout(rect=[0, 0, 1, 0.91])
     fig.savefig(figure_dir / 'fig_comparison_completing_methods.pdf', bbox_inches='tight')
     fig.savefig(figure_dir / 'fig_comparison_completing_methods.png', bbox_inches='tight')
     print('Saved figures/fig_comparison_completing_methods.{pdf,png}')

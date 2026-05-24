@@ -1,8 +1,8 @@
 Dimension,Number Points,Assignment Error,Normalized Error,Iterations,Stopping Criterion,Step Size,Gradient Norm
-2,100,0.01230376174996495,0.006151880874982473,17,"Terminated - min step_size reached after 17 iterations, 0.34 seconds.",-0.0,1.0892908136978135e-09
-2,200,0.00036098954218354734,0.00018049477109177364,27,"Terminated - min step_size reached after 27 iterations, 1.14 seconds.",-0.0,1.8728594485097033e-09
-2,400,0.00015124765664352392,7.562382832176195e-05,11,"Terminated - min step_size reached after 11 iterations, 1.08 seconds.",-0.0,5.873757983354323e-10
-2,800,1.0012436942955369e-07,5.0062184714776833e-08,17,"Terminated - min step_size reached after 17 iterations, 3.03 seconds.",-0.0,3.176396726166304e-10
-2,1600,3.0348539206525148e-05,1.517426960326257e-05,19,"Terminated - min step_size reached after 19 iterations, 6.68 seconds.",-0.0,1.6632157801495402e-09
-2,3200,1.4965017159663176e-05,7.482508579831586e-06,16,"Terminated - min step_size reached after 16 iterations, 11.15 seconds.",-0.0,5.259044677041118e-09
-2,6400,4.225186047894425e-06,2.112593023947212e-06,28,"Terminated - min step_size reached after 28 iterations, 35.66 seconds.",-0.0,1.5456528898360635e-09
+2,100,0.011114614997840033,0.005557307498920016,22,"Terminated - min grad norm reached after 22 iterations, 0.01 seconds.",5.1333606115091e-13,6.445528963606974e-11
+2,200,0.00033010979715009195,0.00016505489857504595,28,"Terminated - min step_size reached after 28 iterations, 0.01 seconds.",0.0,1.6954403851929474e-09
+2,400,0.00014015505404801323,7.00775270240066e-05,22,"Terminated - min step_size reached after 22 iterations, 0.01 seconds.",0.0,5.869172223030373e-10
+2,800,9.091458705154673e-08,4.5457293525773354e-08,15,"Terminated - min step_size reached after 15 iterations, 0.01 seconds.",-0.0,1.5714806794485313e-08
+2,1600,2.7717292625668724e-05,1.3858646312834359e-05,20,"Terminated - min step_size reached after 20 iterations, 0.02 seconds.",0.0,8.02913569449212e-10
+2,3200,1.3631059897965425e-05,6.815529948982711e-06,17,"Terminated - min step_size reached after 17 iterations, 0.02 seconds.",-0.0,1.6461042590795228e-09
+2,6400,3.86221925610546e-06,1.9311096280527297e-06,22,"Terminated - min step_size reached after 22 iterations, 0.04 seconds.",0.0,1.2687200088423022e-09

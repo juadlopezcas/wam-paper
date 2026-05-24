@@ -16,7 +16,7 @@ def configure_loglog_axis(ax):
     ax.set_xscale('log', base=2)
     ax.set_yscale('log', base=2)
     ax.set_xlabel('Sample size')
-    ax.set_ylabel('Relative error')
+    ax.set_ylabel('Frame error')
     ax.xaxis.set_major_formatter(ticker.ScalarFormatter())
     ax.grid(True, which='major', ls=':', lw=0.5, alpha=0.6)
     ax.grid(False, which='minor')
@@ -33,12 +33,13 @@ def load_dimension_series(dim, data_dir):
     return np.array(n_values), np.array(relative_error)
 
 
-def add_inverse_sqrt_reference(ax, x_values, y_values):
-    mid_idx = len(x_values) // 2
-    scale = y_values[mid_idx] * np.sqrt(x_values[mid_idx])
+def add_inverse_sqrt_reference(ax, x_values, y_values, anchor_idx=None):
+    if anchor_idx is None:
+        anchor_idx = len(x_values) // 2
+    scale = y_values[anchor_idx] * np.sqrt(x_values[anchor_idx])
     reference_y = scale / np.sqrt(x_values)
     ax.plot(x_values, reference_y, color='black', ls='--', lw=plt.rcParams['lines.linewidth'], alpha=0.75)
-    label_idx = min(mid_idx + 1, len(x_values) - 2)
+    label_idx = min(anchor_idx + 1, len(x_values) - 2)
     x0, y0 = x_values[label_idx], reference_y[label_idx]
     x1, y1 = x_values[label_idx + 1], reference_y[label_idx + 1]
     p0 = ax.transData.transform((x0, y0))
@@ -53,21 +54,35 @@ def add_inverse_sqrt_reference(ax, x_values, y_values):
 
 def plot_empirical_statistical_rates(ax, style, data_dir, dimensions=(2, 25, 50, 75, 100)):
     reference_x = None
-    reference_y = None
+    series_by_dim = {}
     for idx, dim in enumerate(dimensions):
         x, y = load_dimension_series(dim, data_dir)
+        series_by_dim[dim] = y
         meta = style.series_meta(idx)
         ax.plot(x, y, label=f'$d={dim}$', color=meta['color'], marker=meta['marker'],
                 linewidth=plt.rcParams['lines.linewidth'])
         if reference_x is None:
             reference_x = x
-            reference_y = y
     if reference_x is None:
         raise ValueError('No empirical statistical rate data was loaded.')
-    add_inverse_sqrt_reference(ax, reference_x, reference_y)
+    if 2 in series_by_dim and 25 in series_by_dim:
+        reference_y = np.sqrt(series_by_dim[2] * series_by_dim[25])
+    else:
+        reference_y = next(iter(series_by_dim.values()))
+    add_inverse_sqrt_reference(ax, reference_x, reference_y, anchor_idx=min(4, len(reference_x) - 1))
     configure_loglog_axis(ax)
     ax.autoscale(tight=True)
-    ax.legend(loc='best', frameon=True, framealpha=0.9, edgecolor='0.8')
+    ax.legend(
+        loc='lower left',
+        ncol=1,
+        frameon=True,
+        framealpha=0.82,
+        edgecolor='0.8',
+        borderpad=0.25,
+        handlelength=1.35,
+        handletextpad=0.35,
+        labelspacing=0.25,
+    )
 
 
 def load_convergence_summary(csv_path):
@@ -80,7 +95,7 @@ def plot_convergence_rate(ax, style, data_dir, dim=5):
     if not rows:
         raise ValueError('No convergence summary data found.')
     n_values = np.array([float(row['n_points']) for row in rows])
-    gaussian_y = None
+    series_by_type = {}
     for data_type, meta in style.data_type_meta.items():
         mean_col = f'{data_type}_mean_log2_inv_eps'
         std_col = f'{data_type}_std_log2_inv_eps'
@@ -92,23 +107,35 @@ def plot_convergence_rate(ax, style, data_dir, dim=5):
         ax.plot(n_values, means, label=meta['label'], marker=meta['marker'], color=meta['color'],
                 linewidth=plt.rcParams['lines.linewidth'])
         ax.fill_between(n_values, lower, upper, color=meta['color'], alpha=0.12)
-        if data_type == 'gaussian':
-            gaussian_y = means
-    if gaussian_y is not None:
-        add_inverse_sqrt_reference(ax, n_values, gaussian_y)
+        series_by_type[data_type] = means
+    if {'gaussian', 'exponential', 'student_t'}.issubset(series_by_type):
+        upper_neighbor = np.minimum(series_by_type['exponential'], series_by_type['student_t'])
+        reference_y = np.sqrt(series_by_type['gaussian'] * upper_neighbor)
+        add_inverse_sqrt_reference(ax, n_values, reference_y)
     configure_loglog_axis(ax)
-    ax.legend(loc='best', frameon=True, framealpha=0.9, edgecolor='0.8')
+    ax.autoscale(tight=True)
+    ax.legend(
+        loc='lower left',
+        ncol=1,
+        frameon=True,
+        framealpha=0.82,
+        edgecolor='0.8',
+        borderpad=0.25,
+        handlelength=1.35,
+        handletextpad=0.35,
+        labelspacing=0.25,
+    )
 
 
 def plot_rate_figures(data_dir=Path('experiments/rates'), figure_dir=Path('figures')):
     style = PaperPlotStyle()
     style.apply()
-    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.2), sharey=False)
+    fig, axes = plt.subplots(1, 2, figsize=(10.8, 4.35), sharey=False)
     plot_empirical_statistical_rates(axes[0], style, data_dir)
     plot_convergence_rate(axes[1], style, data_dir)
     axes[1].set_ylabel('')
     figure_dir.mkdir(parents=True, exist_ok=True)
-    fig.tight_layout()
+    fig.subplots_adjust(left=0.075, right=0.99, bottom=0.21, top=0.96, wspace=0.24)
     fig.savefig(figure_dir / 'fig_rates_combined.pdf', bbox_inches='tight')
     fig.savefig(figure_dir / 'fig_rates_combined.png', bbox_inches='tight')
     print('Saved figures/fig_rates_combined.{pdf,png}')

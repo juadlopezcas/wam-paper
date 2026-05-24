@@ -51,7 +51,7 @@ def run_dimension_rate(dim, output_dir, sample_sizes=(100, 200, 400, 800, 1600, 
 def run_convergence_rate_summary(
     output_dir,
     dim=5,
-    sample_sizes=(200, 400, 800, 1600, 3200),
+    sample_sizes=(100, 200, 400, 800, 1600, 3200, 6400),
     n_trials=10,
     delta=0.1,
     seed=42,

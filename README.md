@@ -9,6 +9,8 @@ conda env create -f environment.yml
 conda activate wamfigs
 ```
 
+The environment includes the Python packages, R, and `rpy2` needed for the R `stats::varimax` calls.
+
 ## Reproduce Figures
 
 Regenerate all figures from the saved CSV files:
@@ -29,6 +31,7 @@ Generate individual figures:
 python main.py --main-gradient
 python main.py --log-iterations
 python main.py --comparison-methods
+python main.py --convergence-delta
 python main.py --rates
 python main.py --nytimes  # requires data/nytimes_pca.npz
 ```
