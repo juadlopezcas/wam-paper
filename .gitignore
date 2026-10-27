@@ -3,3 +3,8 @@ __pycache__/
 .venv/
 .DS_Store
 *.egg-info/
+.vscode/
+data/raw/
+data/nytA.npz
+data/nytimes_pca.npz
+.gitignore

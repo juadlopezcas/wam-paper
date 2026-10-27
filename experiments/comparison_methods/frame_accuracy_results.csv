@@ -1,74 +1,4 @@
 method,data_type,dimension,sample_size,noise_level,trial,frame_error,runtime,success,initialization,gradient_norm,iterations,step_size,stopping_criterion
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,0,0.32453708196234493,0.011635780334472656,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,1,0.558510204699788,0.01270294189453125,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,2,0.49639778433471476,0.009303092956542969,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,3,0.13192110670211046,0.010259866714477539,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,4,0.17664476204706572,0.011059999465942383,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,5,0.2768022138455528,0.009391069412231445,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,6,0.2624631185900054,0.009766340255737305,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,7,0.35529294216458196,0.009725570678710938,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,8,0.5296818021242923,0.010969400405883789,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,2,2000,0.05,9,0.1060032177409881,0.00943899154663086,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,0,0.7466092136607473,0.022477149963378906,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,1,0.558592287878282,0.022338151931762695,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,2,0.48709406028552193,0.021557092666625977,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,3,0.5873173594739126,0.021316051483154297,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,4,0.73390718708178,0.023919343948364258,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,5,0.6151664088366007,0.020413637161254883,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,6,0.5103569097617164,0.021839380264282227,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,7,0.6493398495597309,0.022375822067260742,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,8,0.6964652396971569,0.020653963088989258,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,5,2000,0.05,9,0.5890331294724825,0.021843433380126953,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,0,0.8971517889046483,0.04228925704956055,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,1,0.7568818206036783,0.04043889045715332,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,2,0.9191744364017965,0.04055452346801758,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,3,0.8913035619012039,0.04073286056518555,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,4,0.8281586756406651,0.04014921188354492,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,5,0.8502732486996418,0.0353243350982666,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,6,0.8215542916213189,0.041228294372558594,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,7,0.7602154118242882,0.039327383041381836,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,8,0.7699096075026162,0.03600120544433594,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,10,2000,0.05,9,0.8897456502528335,0.0388185977935791,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,0,1.0455059417135433,0.05419349670410156,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,1,0.9362286811967218,0.052327632904052734,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,2,0.9613247893684996,0.05309152603149414,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,3,0.970964050032201,0.058612823486328125,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,4,0.9479332181912488,0.05564284324645996,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,5,1.0298764315096927,0.055635929107666016,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,6,1.0132639113038482,0.05472302436828613,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,7,1.0102200241999515,0.05237770080566406,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,8,0.8663834478289477,0.05440783500671387,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,15,2000,0.05,9,0.9694131875783482,0.0537261962890625,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,0,1.1020098794059696,0.07932829856872559,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,1,1.1380552351981934,0.0805366039276123,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,2,1.132246812401316,0.07899904251098633,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,3,1.080482508269692,0.07873249053955078,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,4,1.136155142081306,0.08239912986755371,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,5,1.0975786511343706,0.07618403434753418,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,6,1.1302364836175385,0.07833218574523926,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,7,1.1512563333093406,0.07751154899597168,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,8,1.0872158489817387,0.08331131935119629,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,25,2000,0.05,9,1.1161629603762908,0.0792849063873291,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,0,1.296642146863996,0.07695555686950684,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,1,1.3313221374276991,0.0608220100402832,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,2,1.3355672711445985,0.05815434455871582,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,3,1.3340813215935685,0.07062196731567383,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,4,1.32525069818643,0.05932116508483887,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,5,1.343347565138301,0.058377981185913086,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,6,1.3100818932458909,0.05875372886657715,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,7,1.3000015696259681,0.06339716911315918,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,8,1.3101765111272436,0.05938887596130371,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,50,2000,0.05,9,1.3107718588770005,0.06601881980895996,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,0,1.4768690588111228,0.39717698097229004,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,1,1.4743349951985212,0.4029090404510498,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,2,1.4698362119754862,0.4022369384765625,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,3,1.4682333335645084,0.3970973491668701,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,4,1.480786087892044,0.40312957763671875,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,5,1.4602187383944873,0.4348456859588623,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,6,1.46307531700796,0.39746880531311035,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,7,1.4788742761080313,0.3926353454589844,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,8,1.4677083196345322,0.39533281326293945,True,random,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,gaussian_rotated,100,2000,0.05,9,1.4516728560626437,0.3979156017303467,True,random,,,,Deflation algorithm (non-pymanopt)
 robust_subspace_clustering,gaussian_rotated,2,2000,0.05,0,3.3686104288186094e-05,146.57097268104553,True,N/A,,,,LASSO + Spectral clustering (non-pymanopt)
 robust_subspace_clustering,gaussian_rotated,2,2000,0.05,1,2.1077181969078394e-05,175.6262698173523,True,N/A,,,,LASSO + Spectral clustering (non-pymanopt)
 robust_subspace_clustering,gaussian_rotated,2,2000,0.05,2,1.0234550070361147e-05,145.32649755477905,True,N/A,,,,LASSO + Spectral clustering (non-pymanopt)
@@ -279,3 +209,73 @@ wfa1_manifold_optimization,gaussian_rotated,100,2000,0.05,6,0.001373201458381876
 wfa1_manifold_optimization,gaussian_rotated,100,2000,0.05,7,0.0012681983033282435,8.182295560836792,True,N/A,1.1458723863334247e-09,50,0.0,"Terminated - min step_size reached after 50 iterations, 8.14 seconds."
 wfa1_manifold_optimization,gaussian_rotated,100,2000,0.05,8,0.0014642065616930556,5.997206926345825,True,N/A,7.879028303853074e-11,43,1.0320455746636593e-09,"Terminated - min grad norm reached after 43 iterations, 5.97 seconds."
 wfa1_manifold_optimization,gaussian_rotated,100,2000,0.05,9,0.0014027319954428134,7.9340221881866455,True,N/A,6.764752786299521e-11,44,0.0,"Terminated - min grad norm reached after 44 iterations, 7.90 seconds."
+qdla,gaussian_rotated,2,2000,0.05,0,2.295503130816968e-05,0.0008680820465087891,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,1,1.2114220134182999e-06,0.0004968643188476562,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,2,2.0981410517920013e-05,0.0005588531494140625,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,3,2.444077455463046e-08,0.0004191398620605469,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,4,1.0346724434855034e-05,0.0004699230194091797,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,5,2.722691580966648e-06,0.0004711151123046875,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,6,1.931088660683719e-05,0.00040411949157714844,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,7,0.00014391840794102722,0.00041031837463378906,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,8,2.3888476777057143e-06,0.0003387928009033203,True,N/A,,4,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,2,2000,0.05,9,0.0003252576087051239,0.0004589557647705078,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,0,6.400023243379322e-05,0.0006821155548095703,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,1,6.223789487060795e-05,0.0008130073547363281,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,2,7.7740444367125e-05,0.0007829666137695312,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,3,5.8491328255564345e-05,0.0005691051483154297,True,N/A,,4,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,4,5.964780373029474e-05,0.0006678104400634766,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,5,0.0001112851053078491,0.0007081031799316406,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,6,0.00010569096666528825,0.0008356571197509766,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,7,8.15920068486672e-05,0.0007910728454589844,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,8,6.0422383441288044e-05,0.0006768703460693359,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,5,2000,0.05,9,0.00010698908791795814,0.0006852149963378906,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,0,0.00013782520347468472,0.0010051727294921875,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,1,0.00011376104501519849,0.0009479522705078125,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,2,0.00015056877857580594,0.0009238719940185547,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,3,0.0001373666253298745,0.0009620189666748047,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,4,0.00012871561671384772,0.0010559558868408203,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,5,0.0001325837340155615,0.0009160041809082031,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,6,0.00018303920280922248,0.0009489059448242188,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,7,0.0001503118364328629,0.0008938312530517578,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,8,0.00014364168326792348,0.0010631084442138672,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,10,2000,0.05,9,0.0001334086913982653,0.001111745834350586,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,0,0.00018858910892025708,0.0021550655364990234,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,1,0.0002539531515552065,0.0017809867858886719,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,2,0.00018776628835925042,0.0017158985137939453,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,3,0.00018003584605271613,0.001567840576171875,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,4,0.00025797023219319485,0.00151824951171875,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,5,0.00017435604564659037,0.00189208984375,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,6,0.00022917651457634322,0.0016739368438720703,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,7,0.0002451997458661911,0.0017421245574951172,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,8,0.0001715026536550889,0.0017337799072265625,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,15,2000,0.05,9,0.00018593432341431005,0.0014710426330566406,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,0,0.00032308070066446796,0.00404810905456543,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,1,0.00028918940809907973,0.003021240234375,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,2,0.0003317360160016469,0.0023050308227539062,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,3,0.0003294709215391507,0.002670764923095703,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,4,0.0003501279537849842,0.0032110214233398438,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,5,0.0003816656582915374,0.0024127960205078125,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,6,0.0003193063328196362,0.002315998077392578,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,7,0.00029064908894927153,0.0023238658905029297,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,8,0.0003002570794502193,0.0023207664489746094,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,25,2000,0.05,9,0.0003554920633244808,0.002808094024658203,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,0,0.0006189172100178485,0.007748126983642578,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,1,0.0006553661074496592,0.005838155746459961,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,2,0.0007266211747311944,0.006469249725341797,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,3,0.0006336051828583257,0.006986856460571289,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,4,0.0006568594886199808,0.005938291549682617,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,5,0.0006238644818648489,0.006955862045288086,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,6,0.0006512574318427507,0.007400035858154297,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,7,0.0006310469922911128,0.006699085235595703,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,8,0.0006889471824265643,0.0071222782135009766,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,50,2000,0.05,9,0.0007232649989592836,0.006242036819458008,True,N/A,,5,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,0,0.0013629515118957474,0.029278039932250977,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,1,0.0013535386510755102,0.032797813415527344,True,N/A,,8,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,2,0.0014495062072725946,0.024726152420043945,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,3,0.001287821936020126,0.028959989547729492,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,4,0.0014438030691650322,0.029244184494018555,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,5,0.0013813512085983585,0.029098987579345703,True,N/A,,7,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,6,0.0013732984609852303,0.026175975799560547,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,7,0.001268198320540523,0.025271177291870117,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,8,0.0014642065623861685,0.024966955184936523,True,N/A,,6,,Relative loss improvement <= 1e-08.
+qdla,gaussian_rotated,100,2000,0.05,9,0.001402731995931327,0.03093576431274414,True,N/A,,7,,Relative loss improvement <= 1e-08.

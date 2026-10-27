@@ -8,11 +8,12 @@ from data.data_utils import DataGenerator
 from scripts.methods import run_trial
 
 METHODS = [
-    'deflation_varimax_random',
+    'qdla',
     'robust_subspace_clustering',
     'pca_varimax',
     'wfa1_manifold_optimization',
 ]
+RETIRED_METHODS = {'deflation_varimax_random'}
 
 FRAME_HEADER = [
     'method', 'data_type', 'dimension', 'sample_size', 'noise_level', 'trial', 'frame_error',
@@ -74,13 +75,24 @@ def run_single(method, data_type, dim, n_samples, noise_level, trial, seed=42):
     }
 
 
+def _preserved_rows(path, fieldnames, methods, update_existing):
+    if not update_existing or not path.exists():
+        return []
+    with open(path, newline='') as f:
+        rows = list(csv.DictReader(f))
+    return [row for row in rows if row['method'] not in methods and row['method'] not in RETIRED_METHODS]
+
+
 def run_frame_accuracy(output_dir, dimensions=(2, 5, 10, 15, 25, 50, 100), sample_sizes=(2000,),
-                       data_types=('gaussian_rotated',), noise_level=0.05, n_trials=10, methods=METHODS):
+                       data_types=('gaussian_rotated',), noise_level=0.05, n_trials=10, methods=METHODS,
+                       update_existing=False):
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / 'frame_accuracy_results.csv'
+    preserved = _preserved_rows(path, FRAME_HEADER, methods, update_existing)
     with open(path, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=FRAME_HEADER)
+        writer = csv.DictWriter(f, fieldnames=FRAME_HEADER, lineterminator='\n')
         writer.writeheader()
+        writer.writerows(preserved)
         for method in methods:
             for data_type in data_types:
                 for dim in dimensions:
@@ -96,12 +108,14 @@ def run_frame_accuracy(output_dir, dimensions=(2, 5, 10, 15, 25, 50, 100), sampl
 
 
 def run_noise_robustness(output_dir, dimensions=(5,), noise_levels=(0.01, 0.05, 0.1, 0.2, 0.3),
-                         n_samples=1000, n_trials=10, methods=METHODS):
+                         n_samples=1000, n_trials=10, methods=METHODS, update_existing=False):
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / 'noise_robustness_results.csv'
+    preserved = _preserved_rows(path, NOISE_HEADER, methods, update_existing)
     with open(path, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=NOISE_HEADER)
+        writer = csv.DictWriter(f, fieldnames=NOISE_HEADER, lineterminator='\n')
         writer.writeheader()
+        writer.writerows(preserved)
         for method in methods:
             for dim in dimensions:
                 for noise_level in noise_levels:
@@ -113,10 +127,11 @@ def run_noise_robustness(output_dir, dimensions=(5,), noise_levels=(0.01, 0.05, 
     return path
 
 
-def run_comparison_suite(output_dir=Path('experiments/comparison_methods'), n_trials=10):
+def run_comparison_suite(output_dir=Path('experiments/comparison_methods'), n_trials=10,
+                         methods=METHODS, update_existing=False):
     return [
-        run_frame_accuracy(output_dir, n_trials=n_trials),
-        run_noise_robustness(output_dir, n_trials=n_trials),
+        run_frame_accuracy(output_dir, n_trials=n_trials, methods=methods, update_existing=update_existing),
+        run_noise_robustness(output_dir, n_trials=n_trials, methods=methods, update_existing=update_existing),
     ]
 
 
@@ -126,17 +141,25 @@ def parse_args():
     parser.add_argument('--frame-only', action='store_true')
     parser.add_argument('--noise-only', action='store_true')
     parser.add_argument('--trials', type=int, default=10)
+    parser.add_argument('--methods', nargs='+', choices=METHODS, default=METHODS)
+    parser.add_argument(
+        '--update-existing', action='store_true',
+        help='Preserve rows for unselected methods and replace rows for --methods.',
+    )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
     if args.frame_only:
-        paths = [run_frame_accuracy(args.output_dir, n_trials=args.trials)]
+        paths = [run_frame_accuracy(args.output_dir, n_trials=args.trials, methods=args.methods,
+                                    update_existing=args.update_existing)]
     elif args.noise_only:
-        paths = [run_noise_robustness(args.output_dir, n_trials=args.trials)]
+        paths = [run_noise_robustness(args.output_dir, n_trials=args.trials, methods=args.methods,
+                                     update_existing=args.update_existing)]
     else:
-        paths = run_comparison_suite(args.output_dir, n_trials=args.trials)
+        paths = run_comparison_suite(args.output_dir, n_trials=args.trials, methods=args.methods,
+                                     update_existing=args.update_existing)
     for path in paths:
         print(f'Saved {path}')
 

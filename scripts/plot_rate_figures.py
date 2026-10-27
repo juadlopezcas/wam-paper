@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-import numpy as np
+import autograd.numpy as np
 
 from scripts.plot_style import PaperPlotStyle
 

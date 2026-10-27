@@ -16,16 +16,19 @@ class PaperPlotStyle:
 
     method_meta = {
         'wfa1_manifold_optimization': {
-            'label': 'Ours', 'color': palette[3], 'marker': 'o', 'zorder': 5, 'ls': '-'
+            'label': 'Riemannian GD, ours',
+            'color': palette[3], 'marker': 'o', 'zorder': 5, 'ls': '-'
         },
-        'robust_subspace_clustering': {
-            'label': 'RSC', 'color': palette[1], 'marker': 's', 'zorder': 4, 'ls': '-'
-        },
-        'deflation_varimax_random': {
-            'label': 'Deflation Varimax', 'color': palette[2], 'marker': '^', 'zorder': 3, 'ls': '--'
+        'qdla': {
+            'label': 'Alternating minimization, [40]',
+            'color': palette[2], 'marker': '^', 'zorder': 6, 'ls': '--'
         },
         'pca_varimax': {
             'label': 'PCA+Varimax', 'color': palette[0], 'marker': 'D', 'zorder': 2, 'ls': '--'
+        },
+        'robust_subspace_clustering': {
+            'label': 'Robust subspace\nclustering',
+            'color': palette[1], 'marker': 's', 'zorder': 4, 'ls': '-'
         },
     }
 

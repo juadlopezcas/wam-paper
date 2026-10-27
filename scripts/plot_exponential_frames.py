@@ -21,22 +21,10 @@ def reference_rotation():
     return np.linalg.svd([[1, -2], [-3, 1]])[0]
 
 
-def generate_rotated_student_t_data(n_samples=5000, seed=42):
-    """Generate 2D Student-t data aligned to the reference frame."""
-    np.random.seed(seed)
-    samples = DataGenerator(n_samples, 2).student_t_data()
-    return samples @ reference_rotation()
-
 def generate_rotated_exponential_data(n_samples=5000, seed=42):
     """Generate 2D exponential data aligned to the reference frame."""
     np.random.seed(seed)
     samples = DataGenerator(n_samples, 2).exponential_factor_analysis_data(apply_reference_rotation=False)
-    return samples @ reference_rotation()
-
-def generate_rotated_gaussian_data(n_samples=5000, seed=42):
-    """Generate 2D Gaussian data aligned to the reference frame."""
-    np.random.seed(seed)
-    samples = DataGenerator(n_samples, 2).gaussian_factor_analysis_data()
     return samples @ reference_rotation()
 
 def run_pca_factor_varimax(data, pca):
@@ -126,19 +114,17 @@ def draw_frame(ax, frame, color, linestyle, marker, label, axis_limit, linewidth
         )
 
 
-def plot_student_t_frames(
+def plot_exponential_frames(
     n_samples=200,
     seed=42,
     max_iterations=100,
     figure_dir=Path('figures'),
 ):
-    """Plot PCA, R PCA+Varimax, and WFA frames on one rotated Student-t cloud."""
+    """Plot PCA, R PCA+Varimax, and WFA frames on one rotated exponential cloud."""
     style = PaperPlotStyle()
     style.apply()
 
-    #data = generate_rotated_student_t_data(n_samples=n_samples, seed=seed)
     data = generate_rotated_exponential_data(n_samples=n_samples, seed=seed)
-    #data = generate_rotated_gaussian_data(n_samples=n_samples, seed=seed)
 
     pca = PCA(n_components=2)
     pca.fit(data)
@@ -148,7 +134,7 @@ def plot_student_t_frames(
         pca_varimax_frame = run_pca_factor_varimax(data, pca)
     except ImportError as exc:
         raise ImportError(
-            'The Student-t frame figure requires the R-based PCA+Varimax wrapper. '
+            'The exponential-frame figure requires the R-based PCA+Varimax wrapper. '
             'Install R and rpy2 in the active environment, then rerun this script.'
         ) from exc
 
@@ -289,11 +275,11 @@ def plot_student_t_frames(
 
     figure_dir = Path(figure_dir)
     figure_dir.mkdir(parents=True, exist_ok=True)
-    fig.savefig(figure_dir / 'fig_student_t_frames.pdf', bbox_inches='tight', pad_inches=0.04)
-    fig.savefig(figure_dir / 'fig_student_t_frames.png', bbox_inches='tight', pad_inches=0.04)
+    fig.savefig(figure_dir / 'fig_exponential_frames.pdf', bbox_inches='tight', pad_inches=0.04)
+    fig.savefig(figure_dir / 'fig_exponential_frames.png', bbox_inches='tight', pad_inches=0.04)
     plt.close(fig)
-    print('Saved figures/fig_student_t_frames.{pdf,png}')
+    print('Saved figures/fig_exponential_frames.{pdf,png}')
 
 
 if __name__ == '__main__':
-    plot_student_t_frames()
+    plot_exponential_frames()

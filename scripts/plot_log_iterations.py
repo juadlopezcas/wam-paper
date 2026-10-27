@@ -85,12 +85,12 @@ def plot_log_iterations(
     n_series = [{'n_points': n, 'dim': fixed_dim, 'label': f'$n={n}$'} for n in n_points_list]
     d_series = [{'n_points': fixed_n_points, 'dim': d, 'label': f'$d={d}$'} for d in dim_list]
 
-    fig = plt.figure(figsize=(10.8, 6.0))
-    grid = fig.add_gridspec(2, 2, width_ratios=[1.0, 1.55], right=0.885, wspace=0.08, hspace=0.34)
+    fig = plt.figure(figsize=(11.2, 6.0))
+    grid = fig.add_gridspec(2, 2, width_ratios=[1.0, 1.55], right=0.89, wspace=0.14, hspace=0.34)
     ax_gaussian_n = fig.add_subplot(grid[0, 0])
     ax_gaussian_d = fig.add_subplot(grid[1, 0])
-    top_right = grid[0, 1].subgridspec(1, 2, wspace=0.36)
-    bottom_right = grid[1, 1].subgridspec(1, 2, wspace=0.36)
+    top_right = grid[0, 1].subgridspec(1, 2, wspace=0.30)
+    bottom_right = grid[1, 1].subgridspec(1, 2, wspace=0.30)
     ax_exp_n = fig.add_subplot(top_right[0, 0])
     ax_student_n = fig.add_subplot(top_right[0, 1])
     ax_exp_d = fig.add_subplot(bottom_right[0, 0])

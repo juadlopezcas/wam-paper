@@ -1,0 +1,39 @@
+{
+  "trials": 20,
+  "dimensions": [
+    5,
+    10,
+    20,
+    40,
+    80
+  ],
+  "noise_levels": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "samples_per_dimension": 200,
+  "reference_starts": 50,
+  "max_iterations": 1000,
+  "seed": 20260917,
+  "threads": 1,
+  "reference_workers": 4,
+  "initialization": "shared random orthogonal",
+  "support_models": [
+    1,
+    3
+  ],
+  "noise": "population RMS noise / population RMS signal",
+  "whitening": "none; population covariance is isotropic",
+  "protocol": "single start; reference multistart is excluded from method timings",
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "pymanopt": "2.2.1",
+    "autograd": "1.8.0"
+  },
+  "reference_implementation": "parallel independent Procrustes refinements; compatible sequential checkpoints allowed"
+}

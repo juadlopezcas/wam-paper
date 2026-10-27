@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-import numpy as np
+import autograd.numpy as np
 
 from scripts.plot_style import PaperPlotStyle
 
@@ -148,14 +148,16 @@ def plot_comparison_methods(data_dir=Path('experiments/comparison_methods'), fig
     format_axis(ax_runtime_noise, noise_levels, 'Noise level', 'Mean runtime (s)', y_log=True)
 
     handles, labels = ax_error_dim.get_legend_handles_labels()
-    fig.legend(
+    legend = fig.legend(
         handles, labels, loc='upper center', ncol=4, bbox_to_anchor=(0.5, 0.995),
         frameon=True, framealpha=0.9, edgecolor='0.8', borderpad=0.45,
-        handlelength=1.7, handletextpad=0.5,
+        handlelength=1.7, handletextpad=0.5, columnspacing=1.4, fontsize=11.5,
     )
+    for text in legend.get_texts():
+        text.set_multialignment('center')
 
     figure_dir.mkdir(parents=True, exist_ok=True)
-    fig.tight_layout(rect=[0, 0, 1, 0.91])
+    fig.tight_layout(rect=[0, 0, 1, 0.88])
     fig.savefig(figure_dir / 'fig_comparison_completing_methods.pdf', bbox_inches='tight')
     fig.savefig(figure_dir / 'fig_comparison_completing_methods.png', bbox_inches='tight')
     print('Saved figures/fig_comparison_completing_methods.{pdf,png}')

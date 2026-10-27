@@ -1,54 +1,4 @@
 method,dimension,noise_level,trial,frame_error,runtime,success,gradient_norm,iterations,step_size,stopping_criterion
-deflation_varimax_random,5,0.01,0,0.45724202456104684,0.03341531753540039,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,1,0.47535753870653696,0.020005464553833008,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,2,0.6020951304752765,0.02047562599182129,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,3,0.45607367736038545,0.020552873611450195,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,4,0.7191522959250928,0.0191037654876709,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,5,0.50717485613774,0.020679712295532227,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,6,0.6184455425859927,0.01970696449279785,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,7,0.621189928330176,0.01717853546142578,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,8,0.4999445018683321,0.020102262496948242,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.01,9,0.5856419333631927,0.01800704002380371,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,0,0.41931889642435943,0.01792168617248535,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,1,0.39728114229917955,0.018039941787719727,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,2,0.5589616692304668,0.02141594886779785,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,3,0.4848217914116682,0.021090984344482422,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,4,0.5358296937320568,0.01910114288330078,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,5,0.7576354437509898,0.020035266876220703,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,6,0.6666632652130692,0.02059793472290039,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,7,0.5844126430586825,0.020359277725219727,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,8,0.49342258913907344,0.020075559616088867,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.05,9,0.5655652968921493,0.020809412002563477,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,0,0.4206858212290581,0.021148681640625,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,1,0.43567682758063947,0.021396160125732422,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,2,0.49345672163839555,0.01785421371459961,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,3,0.6521342260873239,0.02321028709411621,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,4,0.49699234432036166,0.018930435180664062,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,5,0.7314507105665755,0.02246999740600586,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,6,0.7409005677707549,0.025352001190185547,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,7,0.5856522206172743,0.021473407745361328,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,8,0.506307219584675,0.021975040435791016,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.1,9,0.6168535455503623,0.02339911460876465,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,0,0.6049183162272818,0.02096271514892578,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,1,0.5492755402643912,0.02019643783569336,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,2,0.6627343656195208,0.01653599739074707,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,3,0.6070744837698411,0.016045331954956055,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,4,0.39570927444557064,0.020488977432250977,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,5,0.7256496806404706,0.020869970321655273,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,6,0.6686475113142681,0.021307706832885742,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,7,0.5421079599862964,0.021816015243530273,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,8,0.620155485256691,0.020740270614624023,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.2,9,0.7346531394213078,0.020965099334716797,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,0,0.6726001595546373,0.021913528442382812,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,1,0.5382650188255858,0.019995689392089844,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,2,0.7240578792863491,0.020974397659301758,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,3,0.617830096624148,0.021786928176879883,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,4,0.2950386040053318,0.02157902717590332,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,5,0.45050963917096504,0.018436431884765625,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,6,0.6761928616124996,0.018761634826660156,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,7,0.5887296977822954,0.018027782440185547,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,8,0.739382471909925,0.019419431686401367,True,,,,Deflation algorithm (non-pymanopt)
-deflation_varimax_random,5,0.3,9,0.6392443219656734,0.01989293098449707,True,,,,Deflation algorithm (non-pymanopt)
 robust_subspace_clustering,5,0.01,0,3.9659185924326256e-05,54.34602332115173,True,,,,LASSO + Spectral clustering (non-pymanopt)
 robust_subspace_clustering,5,0.01,1,4.8021361450272903e-05,54.988775968551636,True,,,,LASSO + Spectral clustering (non-pymanopt)
 robust_subspace_clustering,5,0.01,2,5.449868578753136e-05,51.76781105995178,True,,,,LASSO + Spectral clustering (non-pymanopt)
@@ -199,3 +149,53 @@ wfa1_manifold_optimization,5,0.3,6,0.002755551502087925,0.04512286186218262,True
 wfa1_manifold_optimization,5,0.3,7,0.0016344804408104643,0.039965152740478516,True,6.84789349316355e-10,22,0.0,"Terminated - min step_size reached after 22 iterations, 0.04 seconds."
 wfa1_manifold_optimization,5,0.3,8,0.002929775436528264,0.04547858238220215,True,4.953314943960078e-10,25,2.1375406087572388e-13,"Terminated - min step_size reached after 25 iterations, 0.04 seconds."
 wfa1_manifold_optimization,5,0.3,9,0.004014949536842417,0.04873943328857422,True,5.2205983263362495e-11,32,1.5575832089246137e-09,"Terminated - min grad norm reached after 32 iterations, 0.05 seconds."
+qdla,5,0.01,0,1.764254461627826e-05,0.0014410018920898438,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,1,3.4499806731222206e-05,0.0003821849822998047,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,2,2.1686157998757515e-05,0.00035190582275390625,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,3,1.1727513078041641e-05,0.0004088878631591797,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,4,2.186565026157757e-05,0.0003418922424316406,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,5,4.2507337017279235e-05,0.0003712177276611328,True,,3,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,6,4.356054519440342e-05,0.0009980201721191406,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,7,2.1344217881565055e-05,0.0003628730773925781,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,8,3.6066601385816806e-05,0.0004298686981201172,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.01,9,4.637844976389413e-05,0.0006537437438964844,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,0,9.400688799190689e-05,0.0010309219360351562,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,1,0.0001865002618051619,0.0010297298431396484,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,2,0.00011526977752230806,0.0015361309051513672,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,3,6.219950330459237e-05,0.0008292198181152344,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,4,0.000118833076807126,0.0009081363677978516,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,5,0.00024474738933259824,0.0011739730834960938,True,,4,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,6,0.00023857232726310794,0.0009500980377197266,True,,6,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,7,0.00011796050968214469,0.0008382797241210938,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,8,0.00019121686577812011,0.0004329681396484375,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.05,9,0.00025579688136090687,0.0005600452423095703,True,,6,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,0,0.0002310621606483255,0.0021550655364990234,True,,6,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,1,0.00046338648144268627,0.000997781753540039,True,,6,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,2,0.00023000060024912466,0.0008490085601806641,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,3,0.00012388021559323704,0.0009720325469970703,True,,6,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,4,0.00030259278089050934,0.0005729198455810547,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,5,0.0005900672201846504,0.00045490264892578125,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,6,0.0005147415323402872,0.0014390945434570312,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,7,0.00027883219483718335,0.001336812973022461,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,8,0.00047240571418707457,0.0004229545593261719,True,,5,,Relative loss improvement <= 1e-08.
+qdla,5,0.1,9,0.000618356929600785,0.0007889270782470703,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,0,0.00046823033754223335,0.0006721019744873047,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,1,0.0011068024211588314,0.0008728504180908203,True,,8,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,2,0.0006200000839187354,0.0007958412170410156,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,3,0.0003283204020029993,0.0006918907165527344,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,4,0.0008358123909622831,0.0008628368377685547,True,,8,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,5,0.0012374153703278226,0.0006239414215087891,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,6,0.0013120631113772191,0.0007739067077636719,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,7,0.0006629748826083346,0.0007617473602294922,True,,7,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,8,0.0013453932228330474,0.0009920597076416016,True,,8,,Relative loss improvement <= 1e-08.
+qdla,5,0.2,9,0.0015839564480908442,0.0008656978607177734,True,,8,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,0,0.0010528424427217727,0.0008940696716308594,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,1,0.00257784871958979,0.001007080078125,True,,12,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,2,0.0015868277498751276,0.0017840862274169922,True,,16,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,3,0.0007925033734482427,0.0009462833404541016,True,,11,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,4,0.00231868615380802,0.0010712146759033203,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,5,0.002205460462338622,0.0009222030639648438,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,6,0.0027555638778225585,0.0008578300476074219,True,,10,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,7,0.0016553342135627828,0.0007500648498535156,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,8,0.002917154535017842,0.0007271766662597656,True,,9,,Relative loss improvement <= 1e-08.
+qdla,5,0.3,9,0.004014985462515488,0.0011467933654785156,True,,15,,Relative loss improvement <= 1e-08.

@@ -2,6 +2,7 @@ name: wamfigs
 channels:
   - conda-forge
 dependencies:
+  # Core numerical and plotting stack for all retained figures.
   - python=3.11
   - numpy=2.4.3
   - scipy=1.17.1
@@ -10,11 +11,12 @@ dependencies:
   - pandas=3.0.2
   - autograd=1.8.0
   - cvxpy=1.8.2
-  
-  # R bridge for pca_varimax
+
+  # R bridge used by PCA+Varimax comparisons.
   - r-base
   - rpy2
 
+  # Manifold optimization used by WMA/GFA and Q-DLA comparisons.
   - pip
   - pip:
       - pymanopt==2.2.1

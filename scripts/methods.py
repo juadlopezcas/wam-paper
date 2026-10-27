@@ -129,6 +129,59 @@ def run_wfa1(data, dim, initial_point=None, log_verbosity=0, max_iterations=None
     return result.point, runtime, True, details
 
 
+def hard_threshold_columns(coordinates, sparsity):
+    """Keep the largest-magnitude entries in each observation (row)."""
+    if not 1 <= sparsity <= coordinates.shape[1]:
+        raise ValueError('sparsity must be between 1 and the ambient dimension.')
+    indices = np.argpartition(np.abs(coordinates), -sparsity, axis=1)[:, -sparsity:]
+    thresholded = np.zeros_like(coordinates)
+    np.put_along_axis(
+        thresholded,
+        indices,
+        np.take_along_axis(coordinates, indices, axis=1),
+        axis=1,
+    )
+    return thresholded
+
+
+def run_qdla(data, dim, sparsity=1, initial_point=None, max_iterations=1000, tolerance=1e-8):
+    """Q-DLA via top-s sparse coding and orthogonal Procrustes updates."""
+    if data.shape[1] != dim:
+        raise ValueError('Q-DLA requires data dimension to equal dim.')
+    start_time = time.time()
+    if initial_point is None:
+        initial_point, r = np.linalg.qr(np.random.normal(size=(dim, dim)))
+        signs = np.sign(np.diag(r))
+        signs[signs == 0] = 1
+        initial_point = initial_point * signs
+    q = np.asarray(initial_point, dtype=float)
+    coordinates = data @ q
+    codes = hard_threshold_columns(coordinates, sparsity)
+    previous_loss = np.sum((coordinates - codes) ** 2)
+    stopping = f'Maximum {max_iterations} iterations reached.'
+    iterations = 0
+    for iterations in range(1, max_iterations + 1):
+        u, _, vt = np.linalg.svd(data.T @ codes, full_matrices=False)
+        candidate = u @ vt
+        coordinates = data @ candidate
+        codes = hard_threshold_columns(coordinates, sparsity)
+        current_loss = np.sum((coordinates - codes) ** 2)
+        relative_improvement = (previous_loss - current_loss) / max(previous_loss, np.finfo(float).eps)
+        q = candidate
+        if abs(relative_improvement) <= tolerance:
+            stopping = f'Relative loss improvement <= {tolerance:g}.'
+            previous_loss = current_loss
+            break
+        previous_loss = current_loss
+    runtime = time.time() - start_time
+    return q, runtime, True, {
+        'iterations': iterations,
+        'stopping_criterion': stopping,
+        'objective': previous_loss / data.shape[0],
+        'sparsity': sparsity,
+    }
+
+
 class DeflationVarimax:
     def __init__(self, r, s=None, method='random'):
         self.r = r
@@ -349,6 +402,8 @@ def run_method(method, data, dim):
         return run_pca_varimax(data, dim)
     if method == 'wfa1_manifold_optimization':
         return run_wfa1(data, dim)
+    if method == 'qdla':
+        return run_qdla(data, dim, sparsity=1)
     raise ValueError(f'Unknown method: {method}')
 
 
